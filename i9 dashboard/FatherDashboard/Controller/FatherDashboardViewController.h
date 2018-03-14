@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FatherDashboardViewController.h
 //  i9 dashboard
 //
 //  Created by Rudney Camargo Pereira on 14/03/18.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface FatherDashboardViewController : UIViewController
 
 @end
-
