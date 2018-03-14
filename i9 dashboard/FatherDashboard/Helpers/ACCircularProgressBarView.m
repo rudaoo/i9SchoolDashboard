@@ -22,7 +22,7 @@
         CAShapeLayer *circleOverride = [CAShapeLayer layer];
         circleOverride.path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(29, 29) radius:32 startAngle:-M_PI_2 endAngle:2 * M_PI - M_PI_2 clockwise:YES].CGPath;
         circleOverride.fillColor = [UIColor clearColor].CGColor;
-        circleOverride.strokeColor = [UIColor whiteColor].CGColor;
+        circleOverride.strokeColor = [UIColor clearColor].CGColor;
         circleOverride.lineWidth = 1;
         [self setBackgroundColor:[UIColor clearColor]];
         [self.layer addSublayer:circleOverride];
