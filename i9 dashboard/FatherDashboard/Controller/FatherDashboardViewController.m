@@ -15,6 +15,11 @@
 @property (weak, nonatomic) IBOutlet ACCircularProgressBarView *logicSkillProgressBar;
 @property (weak, nonatomic) IBOutlet ACCircularProgressBarView *inovationSkillProgressBar;
 
+@property (weak, nonatomic) IBOutlet ACCircularProgressBarView *leadershipProgressBar2;
+@property (weak, nonatomic) IBOutlet ACCircularProgressBarView *groupWorkProgressBar2;
+@property (weak, nonatomic) IBOutlet ACCircularProgressBarView *focusProgressBar2;
+@property (weak, nonatomic) IBOutlet ACCircularProgressBarView *logicSkillProgressbar2;
+@property (weak, nonatomic) IBOutlet ACCircularProgressBarView *inovationSkillProgressBar2;
 
 
 @end
@@ -40,8 +45,14 @@
     self.focusProgressBar.delegate = self;
     self.logicSkillProgressBar.delegate = self;
     self.inovationSkillProgressBar.delegate = self;
+    
+    self.leadershipProgressBar2.delegate = self;
+    self.groupWorkProgressBar2.delegate = self;
+    self.focusProgressBar2.delegate = self;
+    self.logicSkillProgressbar2.delegate = self;
+    self.inovationSkillProgressBar2.delegate = self;
 
-    [self showItensOnScreenAnimation];
+    [self showItensOnScreenAnimation2];
 }
 
 - (void)showItensOnScreenAnimation{
@@ -52,6 +63,16 @@
     [self.logicSkillProgressBar animateWithduration:4 andColor:[UIColor blueColor] andRadius:60 andPercentageValue:0.85];
     [self.inovationSkillProgressBar animateWithduration:4 andColor:[UIColor magentaColor] andRadius:75 andPercentageValue:0.60];
 }
+
+- (void)showItensOnScreenAnimation2{
+    
+    [self.leadershipProgressBar2 animateWithduration:4 andColor:[UIColor redColor] andRadius:15 andPercentageValue:1];
+    [self.groupWorkProgressBar2 animateWithduration:4 andColor:[UIColor greenColor] andRadius:30 andPercentageValue:0.30];
+    [self.focusProgressBar2 animateWithduration:4 andColor:[UIColor orangeColor] andRadius:45 andPercentageValue:0.60];
+    [self.logicSkillProgressbar2 animateWithduration:4 andColor:[UIColor blueColor] andRadius:60 andPercentageValue:0.85];
+    [self.inovationSkillProgressBar2 animateWithduration:4 andColor:[UIColor magentaColor] andRadius:75 andPercentageValue:0.60];
+}
+
 
 
 - (void)progressBarDidComplete{
