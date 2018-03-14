@@ -47,33 +47,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XU0-rG-zq2">
-                                <rect key="frame" x="0.0" y="64" width="375" height="302"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XU0-rG-zq2">
+                                <rect key="frame" x="0.0" y="64" width="375" height="317"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Sa-dr-dqc">
-                                        <rect key="frame" x="0.0" y="0.0" width="750" height="302"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="750" height="317"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EPI-tw-rPf" customClass="ACCircularProgressBarView">
-                                                <rect key="frame" x="67.5" y="182" width="80" height="100"/>
+                                                <rect key="frame" x="67.5" y="197" width="80" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="Bsp-De-wKQ"/>
                                                     <constraint firstAttribute="width" constant="80" id="NP1-Zl-ALy"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WIW-SA-vJ4" customClass="ACCircularProgressBarView">
-                                                <rect key="frame" x="67.5" y="182" width="80" height="100"/>
+                                                <rect key="frame" x="67.5" y="197" width="80" height="100"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j6f-wO-syE" customClass="ACCircularProgressBarView">
-                                                <rect key="frame" x="67.5" y="182" width="80" height="100"/>
+                                                <rect key="frame" x="67.5" y="197" width="80" height="100"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BTi-nw-tRT" customClass="ACCircularProgressBarView">
-                                                <rect key="frame" x="67.5" y="182" width="80" height="100"/>
+                                                <rect key="frame" x="67.5" y="197" width="80" height="100"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fQ-Jc-ifd" customClass="ACCircularProgressBarView">
-                                                <rect key="frame" x="67.5" y="182" width="80" height="100"/>
+                                                <rect key="frame" x="67.5" y="197" width="80" height="100"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SOI-13-FYn">
-                                                <rect key="frame" x="187.5" y="127" width="20" height="20"/>
+                                                <rect key="frame" x="187.5" y="142" width="20" height="20"/>
                                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="cEY-II-qWg"/>
@@ -81,7 +81,7 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liderança" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Qe7-qS-uCB">
-                                                <rect key="frame" x="215.5" y="128" width="144" height="18.5"/>
+                                                <rect key="frame" x="215.5" y="143" width="144" height="18.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="144" id="MXS-xf-nWM"/>
                                                 </constraints>
@@ -90,7 +90,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k6X-aS-0oQ">
-                                                <rect key="frame" x="187.5" y="157" width="20" height="20"/>
+                                                <rect key="frame" x="187.5" y="172" width="20" height="20"/>
                                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="20" id="CJ4-rb-3WK"/>
@@ -98,13 +98,13 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trabalho em Grupo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eMC-9c-Wt8">
-                                                <rect key="frame" x="215.5" y="157" width="144" height="19"/>
+                                                <rect key="frame" x="215.5" y="172" width="144" height="19"/>
                                                 <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RMK-Wj-mfH">
-                                                <rect key="frame" x="187.5" y="187" width="20" height="20"/>
+                                                <rect key="frame" x="187.5" y="202" width="20" height="20"/>
                                                 <color key="backgroundColor" red="1" green="0.50196078431372548" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="Ng3-Mx-wXc"/>
@@ -112,13 +112,13 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foco" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6rZ-rI-shf">
-                                                <rect key="frame" x="215.5" y="187" width="144" height="19"/>
+                                                <rect key="frame" x="215.5" y="202" width="144" height="19"/>
                                                 <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l3A-K1-Yrs">
-                                                <rect key="frame" x="187.5" y="217" width="20" height="20"/>
+                                                <rect key="frame" x="187.5" y="232" width="20" height="20"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="beS-A6-gn5"/>
@@ -126,13 +126,13 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Raciocínio Lógico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tBc-RG-TN2">
-                                                <rect key="frame" x="215.5" y="217" width="144" height="19"/>
+                                                <rect key="frame" x="215.5" y="232" width="144" height="19"/>
                                                 <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Use-PU-WOw">
-                                                <rect key="frame" x="187.5" y="247" width="20" height="20"/>
+                                                <rect key="frame" x="187.5" y="262" width="20" height="20"/>
                                                 <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="Yqc-UZ-Hh9"/>
@@ -140,12 +140,12 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inovação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NoL-ek-8Gv">
-                                                <rect key="frame" x="215.5" y="247" width="144" height="19"/>
+                                                <rect key="frame" x="215.5" y="262" width="144" height="19"/>
                                                 <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Antônio Coutinho," textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkz-Ga-txK">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filho Douglas Sobral" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkz-Ga-txK">
                                                 <rect key="frame" x="16" y="50" width="343" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="343" id="iG2-sd-Vdk"/>
@@ -154,32 +154,33 @@
                                                 <color key="textColor" red="0.92549019610000005" green="0.4549019608" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agora é só aceitar os termos do contrato abaixo e enviar a proposta pra gente ;)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LT2-aW-E4z">
-                                                <rect key="frame" x="16" y="79" width="343" height="30.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LT2-aW-E4z">
+                                                <rect key="frame" x="16" y="79" width="343" height="45.5"/>
+                                                <string key="text">Agora é só conferir o desempenho detalhado de seu filho dentro de nossas atividades e conferir suas melhores competências.  ;)</string>
                                                 <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="13"/>
                                                 <color key="textColor" red="0.1450980392" green="0.1333333333" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Raciocínio Lógico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1Gf-EW-cBo">
-                                                <rect key="frame" x="590" y="217" width="144" height="19"/>
+                                                <rect key="frame" x="590" y="232" width="144" height="19"/>
                                                 <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inovação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xVl-LR-taV">
-                                                <rect key="frame" x="590" y="247" width="144" height="19"/>
+                                                <rect key="frame" x="590" y="262" width="144" height="19"/>
                                                 <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DmY-Uh-w4L" customClass="ACCircularProgressBarView">
-                                                <rect key="frame" x="442" y="182" width="80" height="100"/>
+                                                <rect key="frame" x="442" y="197" width="80" height="100"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4g4-ia-xMa" customClass="ACCircularProgressBarView">
-                                                <rect key="frame" x="442" y="182" width="80" height="100"/>
+                                                <rect key="frame" x="442" y="197" width="80" height="100"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZG-FG-hLT">
-                                                <rect key="frame" x="562" y="187" width="20" height="20"/>
+                                                <rect key="frame" x="562" y="202" width="20" height="20"/>
                                                 <color key="backgroundColor" red="1" green="0.50196078430000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="20" id="azH-7V-8u1"/>
@@ -187,7 +188,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b6l-VJ-mqO">
-                                                <rect key="frame" x="562" y="217" width="20" height="20"/>
+                                                <rect key="frame" x="562" y="232" width="20" height="20"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="20" id="0zg-uu-4Ig"/>
@@ -195,7 +196,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IvG-1r-glu">
-                                                <rect key="frame" x="562" y="157" width="20" height="20"/>
+                                                <rect key="frame" x="562" y="172" width="20" height="20"/>
                                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="20" id="OXY-N5-XgT"/>
@@ -203,7 +204,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zyw-gt-hHj">
-                                                <rect key="frame" x="562" y="127" width="20" height="20"/>
+                                                <rect key="frame" x="562" y="142" width="20" height="20"/>
                                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="6YO-LI-zT8"/>
@@ -211,13 +212,13 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trabalho em Grupo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4zc-vC-hKB">
-                                                <rect key="frame" x="590" y="157" width="144" height="19"/>
+                                                <rect key="frame" x="590" y="172" width="144" height="19"/>
                                                 <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cFt-rH-aU6">
-                                                <rect key="frame" x="562" y="247" width="20" height="20"/>
+                                                <rect key="frame" x="562" y="262" width="20" height="20"/>
                                                 <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="65x-Gl-B73"/>
@@ -225,26 +226,27 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4W-dU-4bC" customClass="ACCircularProgressBarView">
-                                                <rect key="frame" x="442" y="182" width="80" height="100"/>
+                                                <rect key="frame" x="442" y="197" width="80" height="100"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FOE-dH-lcl" customClass="ACCircularProgressBarView">
-                                                <rect key="frame" x="442" y="182" width="80" height="100"/>
+                                                <rect key="frame" x="442" y="197" width="80" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="Opp-Au-gSJ"/>
                                                     <constraint firstAttribute="height" constant="100" id="mMI-ux-d7l"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agora é só aceitar os termos do contrato abaixo e enviar a proposta pra gente ;)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrh-eP-Fvc">
-                                                <rect key="frame" x="391" y="79" width="343" height="30.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrh-eP-Fvc">
+                                                <rect key="frame" x="391" y="79" width="343" height="45.5"/>
+                                                <string key="text">Agora é só conferir o desempenho detalhado de sua filha dentro de nossas atividades e conferir suas melhores competências.  ;)</string>
                                                 <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="13"/>
                                                 <color key="textColor" red="0.1450980392" green="0.1333333333" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lOk-MB-74X" customClass="ACCircularProgressBarView">
-                                                <rect key="frame" x="442" y="182" width="80" height="100"/>
+                                                <rect key="frame" x="442" y="197" width="80" height="100"/>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liderança" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wHA-J1-Ct3">
-                                                <rect key="frame" x="590" y="128" width="144" height="18.5"/>
+                                                <rect key="frame" x="590" y="143" width="144" height="18.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="144" id="W2M-6O-Ie1"/>
                                                 </constraints>
@@ -253,12 +255,12 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foco" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Oxd-NM-VYt">
-                                                <rect key="frame" x="590" y="187" width="144" height="19"/>
+                                                <rect key="frame" x="590" y="202" width="144" height="19"/>
                                                 <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Antônio Coutinho," textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFQ-dc-alh">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filha Maria Sobral" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFQ-dc-alh">
                                                 <rect key="frame" x="391" y="50" width="343" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="343" id="pBK-IG-gwz"/>
@@ -377,6 +379,9 @@
                                     <constraint firstItem="4Sa-dr-dqc" firstAttribute="height" secondItem="XU0-rG-zq2" secondAttribute="height" id="cYk-Ss-fuz"/>
                                     <constraint firstItem="4Sa-dr-dqc" firstAttribute="leading" secondItem="XU0-rG-zq2" secondAttribute="leading" id="z0z-Ej-z6y"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="OVw-Cu-SCi" id="MNa-xk-zPM"/>
+                                </connections>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="Nkd-Ym-MJ0" customClass="CarouselCustomPageControl">
                                 <rect key="frame" x="176" y="74" width="23" height="37"/>
@@ -411,6 +416,8 @@
                         <outlet property="leadershipProgressBar2" destination="DmY-Uh-w4L" id="iGX-8T-3RK"/>
                         <outlet property="logicSkillProgressBar" destination="BTi-nw-tRT" id="NjT-BA-4J6"/>
                         <outlet property="logicSkillProgressbar2" destination="FOE-dH-lcl" id="isI-mB-xsw"/>
+                        <outlet property="pageControl" destination="Nkd-Ym-MJ0" id="9qP-uH-9Vw"/>
+                        <outlet property="scrollView" destination="XU0-rG-zq2" id="KGp-3Q-xxb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WF2-1s-SrX" userLabel="First Responder" sceneMemberID="firstResponder"/>

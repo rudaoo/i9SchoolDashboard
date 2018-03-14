@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "ACCircularProgressBarView.h"
 
-@interface FatherDashboardViewController : UIViewController<ACCircularProgressBarDelegate>
+@interface FatherDashboardViewController : UIViewController<ACCircularProgressBarDelegate, UIScrollViewDelegate>
 
 @end

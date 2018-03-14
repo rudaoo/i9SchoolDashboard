@@ -7,6 +7,7 @@
 //
 
 #import "FatherDashboardViewController.h"
+#import "CarouselCustomPageControl.h"
 
 @interface FatherDashboardViewController ()
 @property (weak, nonatomic) IBOutlet ACCircularProgressBarView *leadershipProgressBar;
@@ -20,6 +21,8 @@
 @property (weak, nonatomic) IBOutlet ACCircularProgressBarView *focusProgressBar2;
 @property (weak, nonatomic) IBOutlet ACCircularProgressBarView *logicSkillProgressbar2;
 @property (weak, nonatomic) IBOutlet ACCircularProgressBarView *inovationSkillProgressBar2;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet CarouselCustomPageControl *pageControl;
 
 
 @end
@@ -52,7 +55,7 @@
     self.logicSkillProgressbar2.delegate = self;
     self.inovationSkillProgressBar2.delegate = self;
 
-    [self showItensOnScreenAnimation2];
+    [self showItensOnScreenAnimation];
 }
 
 - (void)showItensOnScreenAnimation{
@@ -73,6 +76,27 @@
     [self.inovationSkillProgressBar2 animateWithduration:4 andColor:[UIColor magentaColor] andRadius:75 andPercentageValue:0.60];
 }
 
+
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    
+    CGFloat currentPage = self.scrollView.contentOffset.x / self.scrollView.frame.size.width ;
+    
+    if (currentPage == (int)currentPage) {
+        
+        self.pageControl.currentPage = currentPage;
+        
+        if (self.pageControl.currentPage == 0) {
+            
+            [self showItensOnScreenAnimation];
+        }
+        else{
+            
+            [self showItensOnScreenAnimation2];
+        }
+        
+    }
+}
 
 
 - (void)progressBarDidComplete{
