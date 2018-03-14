@@ -17,6 +17,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AFH-h6-LEr">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.92549019607843142" green="0.4392156862745098" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="OVw-Cu-SCi" kind="relationship" relationship="rootViewController" id="AP9-nl-QMT"/>
@@ -33,10 +37,66 @@
                     <view key="view" contentMode="scaleToFill" id="a9e-bw-M4D">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EPI-tw-rPf" customClass="ACCircularProgressBarView">
+                                <rect key="frame" x="165.5" y="124" width="80" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="4e1-fP-p9z"/>
+                                    <constraint firstAttribute="height" constant="160" id="zkI-P9-vzE"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WIW-SA-vJ4" customClass="ACCircularProgressBarView">
+                                <rect key="frame" x="165.5" y="124" width="80" height="160"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j6f-wO-syE" customClass="ACCircularProgressBarView">
+                                <rect key="frame" x="165.5" y="124" width="80" height="160"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BTi-nw-tRT" customClass="ACCircularProgressBarView">
+                                <rect key="frame" x="165.5" y="124" width="80" height="160"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fQ-Jc-ifd" customClass="ACCircularProgressBarView">
+                                <rect key="frame" x="165.5" y="124" width="80" height="160"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5fQ-Jc-ifd" firstAttribute="width" secondItem="BTi-nw-tRT" secondAttribute="width" id="05k-g8-5Od"/>
+                            <constraint firstItem="BTi-nw-tRT" firstAttribute="centerY" secondItem="j6f-wO-syE" secondAttribute="centerY" id="2Mn-AT-xed"/>
+                            <constraint firstItem="j6f-wO-syE" firstAttribute="centerX" secondItem="WIW-SA-vJ4" secondAttribute="centerX" id="4SD-qT-duj"/>
+                            <constraint firstItem="5fQ-Jc-ifd" firstAttribute="height" secondItem="BTi-nw-tRT" secondAttribute="height" id="4ve-YT-Kvf"/>
+                            <constraint firstItem="5fQ-Jc-ifd" firstAttribute="centerY" secondItem="BTi-nw-tRT" secondAttribute="centerY" id="7ej-jR-QsQ"/>
+                            <constraint firstItem="WIW-SA-vJ4" firstAttribute="centerY" secondItem="EPI-tw-rPf" secondAttribute="centerY" id="8mh-4x-DYF"/>
+                            <constraint firstItem="j6f-wO-syE" firstAttribute="width" secondItem="WIW-SA-vJ4" secondAttribute="width" id="TyG-6Y-2Bv"/>
+                            <constraint firstItem="WIW-SA-vJ4" firstAttribute="width" secondItem="EPI-tw-rPf" secondAttribute="width" id="bkk-Fe-hgD"/>
+                            <constraint firstItem="5fQ-Jc-ifd" firstAttribute="centerX" secondItem="BTi-nw-tRT" secondAttribute="centerX" id="g2e-Zh-dec"/>
+                            <constraint firstItem="j6f-wO-syE" firstAttribute="centerY" secondItem="WIW-SA-vJ4" secondAttribute="centerY" id="hhT-O0-Lb5"/>
+                            <constraint firstItem="WIW-SA-vJ4" firstAttribute="height" secondItem="EPI-tw-rPf" secondAttribute="height" id="rdZ-cW-fep"/>
+                            <constraint firstItem="BTi-nw-tRT" firstAttribute="width" secondItem="j6f-wO-syE" secondAttribute="width" id="sKw-7p-mzu"/>
+                            <constraint firstItem="BTi-nw-tRT" firstAttribute="height" secondItem="j6f-wO-syE" secondAttribute="height" id="tIs-O4-Ss4"/>
+                            <constraint firstItem="EPI-tw-rPf" firstAttribute="centerX" secondItem="a9e-bw-M4D" secondAttribute="centerX" constant="18" id="tOP-Xy-ACz"/>
+                            <constraint firstItem="WIW-SA-vJ4" firstAttribute="centerX" secondItem="EPI-tw-rPf" secondAttribute="centerX" id="tVh-GU-KsT"/>
+                            <constraint firstItem="EPI-tw-rPf" firstAttribute="top" secondItem="yTL-Z5-d2L" secondAttribute="top" constant="60" id="wGV-d7-LwX"/>
+                            <constraint firstItem="BTi-nw-tRT" firstAttribute="centerX" secondItem="j6f-wO-syE" secondAttribute="centerX" id="wob-Mi-NDD"/>
+                            <constraint firstItem="j6f-wO-syE" firstAttribute="height" secondItem="WIW-SA-vJ4" secondAttribute="height" id="y6f-Mx-QEE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="yTL-Z5-d2L"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Dashboard" id="2Nk-l6-z2L"/>
+                    <navigationItem key="navigationItem" title="Dashboard" id="2Nk-l6-z2L">
+                        <barButtonItem key="rightBarButtonItem" title="Sair" id="3Nm-Af-LWZ">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="focusProgressBar" destination="j6f-wO-syE" id="bTu-97-kHk"/>
+                        <outlet property="groupWorkProgressBar" destination="WIW-SA-vJ4" id="xue-eG-Hpb"/>
+                        <outlet property="inovationSkillProgressBar" destination="5fQ-Jc-ifd" id="dx5-Vb-Hls"/>
+                        <outlet property="leadershipProgressBar" destination="EPI-tw-rPf" id="7HS-pR-eCX"/>
+                        <outlet property="logicSkillProgressBar" destination="BTi-nw-tRT" id="NjT-BA-4J6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WF2-1s-SrX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
