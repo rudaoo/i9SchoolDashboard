@@ -7,6 +7,9 @@
 //
 
 #import "MainNavigationController.h"
+#import "FatherDashboardViewController.h"
+#import "MMDrawerController.h"
+#import "UIViewController+IPFUtils.h"
 
 @interface MainNavigationController ()
 @property (nonatomic, strong) UIViewController *viewController;
@@ -18,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.delegate = self;
-    // Do any additional setup after loading the view.
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,7 +31,27 @@
 
 - (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
     
-
+//
+//    UIViewController * leftDrawer = [[UIViewController alloc] init];
+//    FatherDashboardViewController * center = [[FatherDashboardViewController alloc] init];
+//    UIViewController * rightDrawer = [[UIViewController alloc] init];
+//
+//    MMDrawerController * drawerController = [[MMDrawerController alloc]
+//                                             initWithCenterViewController:center
+//                                             leftDrawerViewController:leftDrawer
+//                                             rightDrawerViewController:rightDrawer];
+//
+//    [drawerController
+//     setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
+//         UIViewController * sideDrawerViewController;
+//         if(drawerSide == MMDrawerSideLeft){
+//             sideDrawerViewController = drawerController.leftDrawerViewController;
+//         }
+//         else if(drawerSide == MMDrawerSideRight){
+//             sideDrawerViewController = drawerController.rightDrawerViewController;
+//         }
+//         [sideDrawerViewController.view setAlpha:percentVisible];
+//     }];
     
 }
 

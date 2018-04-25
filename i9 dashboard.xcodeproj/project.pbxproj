@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16270706894A2E8BB5146B47 /* libPods-i9 dashboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8558E3643D691DA76C6BBC /* libPods-i9 dashboard.a */; };
 		2729E3A52090C85D0024A759 /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2729E3A42090C85D0024A759 /* MainNavigationController.m */; };
+		2729E3B02090D24C0024A759 /* UIViewController+IPFUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2729E3AE2090D24C0024A759 /* UIViewController+IPFUtils.m */; };
+		2729E3B52090D4800024A759 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2729E3B32090D47F0024A759 /* UIViewController+MMDrawerController.m */; };
+		2729E3B62090D4800024A759 /* MMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2729E3B42090D47F0024A759 /* MMNavigationController.m */; };
 		27343F4E2059569B002140B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27343F4D2059569B002140B8 /* AppDelegate.m */; };
 		27343F562059569B002140B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27343F552059569B002140B8 /* Assets.xcassets */; };
 		27343F592059569B002140B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27343F572059569B002140B8 /* LaunchScreen.storyboard */; };
@@ -24,8 +28,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		258DEC24D7CE20217F61C758 /* Pods-i9 dashboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i9 dashboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-i9 dashboard/Pods-i9 dashboard.debug.xcconfig"; sourceTree = "<group>"; };
 		2729E3A32090C85D0024A759 /* MainNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainNavigationController.h; sourceTree = "<group>"; };
 		2729E3A42090C85D0024A759 /* MainNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainNavigationController.m; sourceTree = "<group>"; };
+		2729E3AE2090D24C0024A759 /* UIViewController+IPFUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+IPFUtils.m"; sourceTree = "<group>"; };
+		2729E3AF2090D24C0024A759 /* UIViewController+IPFUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+IPFUtils.h"; sourceTree = "<group>"; };
+		2729E3B12090D47E0024A759 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		2729E3B22090D47F0024A759 /* MMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMNavigationController.h; sourceTree = "<group>"; };
+		2729E3B32090D47F0024A759 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		2729E3B42090D47F0024A759 /* MMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMNavigationController.m; sourceTree = "<group>"; };
 		27343F492059569B002140B8 /* i9 dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "i9 dashboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27343F4C2059569B002140B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		27343F4D2059569B002140B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -45,6 +56,8 @@
 		27B3A29A20595C0000C6C429 /* ItauText_A_Rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ItauText_A_Rg.ttf; sourceTree = "<group>"; };
 		27B3A29B20595C0000C6C429 /* ItauText_A_Bd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ItauText_A_Bd.ttf; sourceTree = "<group>"; };
 		27B3A29C20595C0000C6C429 /* itaufonts_master_24px_v1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = itaufonts_master_24px_v1.ttf; sourceTree = "<group>"; };
+		AC8558E3643D691DA76C6BBC /* libPods-i9 dashboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-i9 dashboard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE598A9BBEFCC36855253362 /* Pods-i9 dashboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i9 dashboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-i9 dashboard/Pods-i9 dashboard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16270706894A2E8BB5146B47 /* libPods-i9 dashboard.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,11 +81,22 @@
 			path = MainNavigation;
 			sourceTree = "<group>";
 		};
+		2729E3AD2090D2390024A759 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				2729E3AF2090D24C0024A759 /* UIViewController+IPFUtils.h */,
+				2729E3AE2090D24C0024A759 /* UIViewController+IPFUtils.m */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		27343F402059569A002140B8 = {
 			isa = PBXGroup;
 			children = (
 				27343F4B2059569B002140B8 /* i9 dashboard */,
 				27343F4A2059569B002140B8 /* Products */,
+				FF0109286F8929A471251D85 /* Pods */,
+				DB277CFE4209F45DEE0BC1A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +154,11 @@
 		27A6CDE6205964E500D6A105 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2729E3B22090D47F0024A759 /* MMNavigationController.h */,
+				2729E3B42090D47F0024A759 /* MMNavigationController.m */,
+				2729E3B12090D47E0024A759 /* UIViewController+MMDrawerController.h */,
+				2729E3B32090D47F0024A759 /* UIViewController+MMDrawerController.m */,
+				2729E3AD2090D2390024A759 /* Storyboard */,
 				279AA0DA2059A3FA008E4296 /* CarouselCustomPageControl.h */,
 				279AA0DB2059A3FA008E4296 /* CarouselCustomPageControl.m */,
 				27A6CDE72059650B00D6A105 /* ACCircularProgressBarView.h */,
@@ -157,6 +187,23 @@
 			path = Fontes;
 			sourceTree = "<group>";
 		};
+		DB277CFE4209F45DEE0BC1A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC8558E3643D691DA76C6BBC /* libPods-i9 dashboard.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF0109286F8929A471251D85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				258DEC24D7CE20217F61C758 /* Pods-i9 dashboard.debug.xcconfig */,
+				AE598A9BBEFCC36855253362 /* Pods-i9 dashboard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,9 +211,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27343F5F2059569B002140B8 /* Build configuration list for PBXNativeTarget "i9 dashboard" */;
 			buildPhases = (
+				155E4587C9270FB692BB3B59 /* [CP] Check Pods Manifest.lock */,
 				27343F452059569B002140B8 /* Sources */,
 				27343F462059569B002140B8 /* Frameworks */,
 				27343F472059569B002140B8 /* Resources */,
+				9DEE74090863AD9EEB969AD6 /* [CP] Embed Pods Frameworks */,
+				4EEA2A2AB94266C88A699DFA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,6 +278,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		155E4587C9270FB692BB3B59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4EEA2A2AB94266C88A699DFA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-i9 dashboard/Pods-i9 dashboard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DEE74090863AD9EEB969AD6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-i9 dashboard/Pods-i9 dashboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		27343F452059569B002140B8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -235,6 +333,9 @@
 			files = (
 				279AA0DC2059A3FA008E4296 /* CarouselCustomPageControl.m in Sources */,
 				27A6CDE92059650B00D6A105 /* ACCircularProgressBarView.m in Sources */,
+				2729E3B02090D24C0024A759 /* UIViewController+IPFUtils.m in Sources */,
+				2729E3B62090D4800024A759 /* MMNavigationController.m in Sources */,
+				2729E3B52090D4800024A759 /* UIViewController+MMDrawerController.m in Sources */,
 				27343F5C2059569B002140B8 /* main.m in Sources */,
 				27343F4E2059569B002140B8 /* AppDelegate.m in Sources */,
 				2729E3A52090C85D0024A759 /* MainNavigationController.m in Sources */,
@@ -362,6 +463,7 @@
 		};
 		27343F602059569B002140B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 258DEC24D7CE20217F61C758 /* Pods-i9 dashboard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +478,7 @@
 		};
 		27343F612059569B002140B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE598A9BBEFCC36855253362 /* Pods-i9 dashboard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
