@@ -15,6 +15,8 @@
 #import <QuartzCore/QuartzCore.h>
 #import "MMExampleDrawerVisualStateManager.h"
 #import "RightMenuTableViewController.h"
+#import "TeacherMenuTableViewController.h"
+#import "TeacherDashViewController.h"
 
 @interface AppDelegate ()
 @property (nonatomic,strong) MMDrawerController * drawerController;
@@ -27,7 +29,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [self fatherApp];
+    [self teacherApp];
    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
@@ -73,6 +75,41 @@
     RightMenuTableViewController * leftSideDrawerViewController = [RightMenuTableViewController initFromStoryboard:@"RightMenuTableViewController"];
     
     FatherDashboardViewController *centerViewController = [FatherDashboardViewController initFromStoryboard:@"FatherDashboard"];
+    
+    UIViewController * rightSideDrawerViewController = [[FatherDashboardViewController alloc] init];
+    
+    UINavigationController * navigationController = [[MMNavigationController alloc] initWithRootViewController:centerViewController];
+    [navigationController setRestorationIdentifier:@"MMExampleCenterNavigationControllerRestorationKey"];
+    UINavigationController * rightSideNavController = [[MMNavigationController alloc] initWithRootViewController:rightSideDrawerViewController];
+    [rightSideNavController setRestorationIdentifier:@"MMExampleRightNavigationControllerRestorationKey"];
+    UINavigationController * leftSideNavController = [[MMNavigationController alloc] initWithRootViewController:leftSideDrawerViewController];
+    [leftSideNavController setRestorationIdentifier:@"MMExampleLeftNavigationControllerRestorationKey"];
+    self.drawerController = [[MMDrawerController alloc]
+                             initWithCenterViewController:navigationController
+                             leftDrawerViewController:leftSideNavController
+                             rightDrawerViewController:nil];
+    [self.drawerController setShowsShadow:NO];
+    [self.drawerController setRestorationIdentifier:@"MMDrawer"];
+    [self.drawerController setMaximumRightDrawerWidth:200.0];
+    [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+    
+    [self.drawerController
+     setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
+         MMDrawerControllerDrawerVisualStateBlock block;
+         block = [[MMExampleDrawerVisualStateManager sharedManager]
+                  drawerVisualStateBlockForDrawerSide:drawerSide];
+         if(block){
+             block(drawerController, drawerSide, percentVisible);
+         }
+     }];
+}
+
+-(void) teacherApp {
+    
+    TeacherMenuTableViewController * leftSideDrawerViewController = [TeacherMenuTableViewController initFromStoryboard:@"TeacherMenuTableViewController"];
+    
+    TeacherDashViewController *centerViewController = [TeacherDashViewController initFromStoryboard:@"TeacherDashViewController"];
     
     UIViewController * rightSideDrawerViewController = [[FatherDashboardViewController alloc] init];
     
