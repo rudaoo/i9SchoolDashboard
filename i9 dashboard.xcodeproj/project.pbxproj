@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2729E3A12090C6FF0024A759 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2729E39F2090C6FF0024A759 /* SWRevealViewController.m */; };
+		2729E3A52090C85D0024A759 /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2729E3A42090C85D0024A759 /* MainNavigationController.m */; };
+		2729E3A82090C8820024A759 /* SWRevealViewControllerShield.m in Sources */ = {isa = PBXBuildFile; fileRef = 2729E3A72090C8820024A759 /* SWRevealViewControllerShield.m */; };
 		27343F4E2059569B002140B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27343F4D2059569B002140B8 /* AppDelegate.m */; };
 		27343F562059569B002140B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27343F552059569B002140B8 /* Assets.xcassets */; };
 		27343F592059569B002140B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27343F572059569B002140B8 /* LaunchScreen.storyboard */; };
@@ -23,6 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2729E39F2090C6FF0024A759 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		2729E3A02090C6FF0024A759 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		2729E3A32090C85D0024A759 /* MainNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainNavigationController.h; sourceTree = "<group>"; };
+		2729E3A42090C85D0024A759 /* MainNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainNavigationController.m; sourceTree = "<group>"; };
+		2729E3A62090C8820024A759 /* SWRevealViewControllerShield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewControllerShield.h; sourceTree = "<group>"; };
+		2729E3A72090C8820024A759 /* SWRevealViewControllerShield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewControllerShield.m; sourceTree = "<group>"; };
 		27343F492059569B002140B8 /* i9 dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "i9 dashboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27343F4C2059569B002140B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		27343F4D2059569B002140B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -55,6 +64,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2729E39E2090C6E00024A759 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2729E3A02090C6FF0024A759 /* SWRevealViewController.h */,
+				2729E39F2090C6FF0024A759 /* SWRevealViewController.m */,
+			);
+			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		2729E3A22090C82E0024A759 /* MainNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				2729E3A62090C8820024A759 /* SWRevealViewControllerShield.h */,
+				2729E3A72090C8820024A759 /* SWRevealViewControllerShield.m */,
+				2729E3A32090C85D0024A759 /* MainNavigationController.h */,
+				2729E3A42090C85D0024A759 /* MainNavigationController.m */,
+			);
+			path = MainNavigation;
+			sourceTree = "<group>";
+		};
 		27343F402059569A002140B8 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +128,7 @@
 		27343F63205956DF002140B8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2729E3A22090C82E0024A759 /* MainNavigation */,
 				27343F6620595710002140B8 /* FatherDashboardViewController.h */,
 				27343F6720595710002140B8 /* FatherDashboardViewController.m */,
 			);
@@ -116,6 +146,7 @@
 		27A6CDE6205964E500D6A105 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2729E39E2090C6E00024A759 /* SWRevealViewController */,
 				279AA0DA2059A3FA008E4296 /* CarouselCustomPageControl.h */,
 				279AA0DB2059A3FA008E4296 /* CarouselCustomPageControl.m */,
 				27A6CDE72059650B00D6A105 /* ACCircularProgressBarView.h */,
@@ -222,9 +253,12 @@
 			files = (
 				279AA0DC2059A3FA008E4296 /* CarouselCustomPageControl.m in Sources */,
 				27A6CDE92059650B00D6A105 /* ACCircularProgressBarView.m in Sources */,
+				2729E3A82090C8820024A759 /* SWRevealViewControllerShield.m in Sources */,
 				27343F5C2059569B002140B8 /* main.m in Sources */,
 				27343F4E2059569B002140B8 /* AppDelegate.m in Sources */,
+				2729E3A52090C85D0024A759 /* MainNavigationController.m in Sources */,
 				27343F6820595710002140B8 /* FatherDashboardViewController.m in Sources */,
+				2729E3A12090C6FF0024A759 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
