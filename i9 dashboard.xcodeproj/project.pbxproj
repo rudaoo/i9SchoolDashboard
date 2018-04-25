@@ -12,6 +12,7 @@
 		2729E3B02090D24C0024A759 /* UIViewController+IPFUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2729E3AE2090D24C0024A759 /* UIViewController+IPFUtils.m */; };
 		2729E3B52090D4800024A759 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2729E3B32090D47F0024A759 /* UIViewController+MMDrawerController.m */; };
 		2729E3B62090D4800024A759 /* MMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2729E3B42090D47F0024A759 /* MMNavigationController.m */; };
+		2729E3B92090D6110024A759 /* MMExampleDrawerVisualStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2729E3B82090D6110024A759 /* MMExampleDrawerVisualStateManager.m */; };
 		27343F4E2059569B002140B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27343F4D2059569B002140B8 /* AppDelegate.m */; };
 		27343F562059569B002140B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27343F552059569B002140B8 /* Assets.xcassets */; };
 		27343F592059569B002140B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27343F572059569B002140B8 /* LaunchScreen.storyboard */; };
@@ -37,6 +38,8 @@
 		2729E3B22090D47F0024A759 /* MMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMNavigationController.h; sourceTree = "<group>"; };
 		2729E3B32090D47F0024A759 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 		2729E3B42090D47F0024A759 /* MMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMNavigationController.m; sourceTree = "<group>"; };
+		2729E3B72090D6100024A759 /* MMExampleDrawerVisualStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMExampleDrawerVisualStateManager.h; sourceTree = "<group>"; };
+		2729E3B82090D6110024A759 /* MMExampleDrawerVisualStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMExampleDrawerVisualStateManager.m; sourceTree = "<group>"; };
 		27343F492059569B002140B8 /* i9 dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "i9 dashboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27343F4C2059569B002140B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		27343F4D2059569B002140B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -154,6 +157,8 @@
 		27A6CDE6205964E500D6A105 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2729E3B72090D6100024A759 /* MMExampleDrawerVisualStateManager.h */,
+				2729E3B82090D6110024A759 /* MMExampleDrawerVisualStateManager.m */,
 				2729E3B22090D47F0024A759 /* MMNavigationController.h */,
 				2729E3B42090D47F0024A759 /* MMNavigationController.m */,
 				2729E3B12090D47E0024A759 /* UIViewController+MMDrawerController.h */,
@@ -340,6 +345,7 @@
 				27343F4E2059569B002140B8 /* AppDelegate.m in Sources */,
 				2729E3A52090C85D0024A759 /* MainNavigationController.m in Sources */,
 				27343F6820595710002140B8 /* FatherDashboardViewController.m in Sources */,
+				2729E3B92090D6110024A759 /* MMExampleDrawerVisualStateManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

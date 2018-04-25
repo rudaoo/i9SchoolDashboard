@@ -410,9 +410,7 @@
                         <viewLayoutGuide key="safeArea" id="yTL-Z5-d2L"/>
                     </view>
                     <navigationItem key="navigationItem" title="Dashboard" id="2Nk-l6-z2L">
-                        <barButtonItem key="rightBarButtonItem" title="Sair" id="3Nm-Af-LWZ">
-                            <color key="tintColor" red="0.0" green="0.36470588235294116" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="=" style="plain" id="Lla-4h-yPz"/>
                     </navigationItem>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>

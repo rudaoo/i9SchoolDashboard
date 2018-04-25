@@ -13,6 +13,7 @@
 #import "MMNavigationController.h"
 #import "UIViewController+IPFUtils.h"
 #import <QuartzCore/QuartzCore.h>
+#import "MMExampleDrawerVisualStateManager.h"
 
 @interface AppDelegate ()
 @property (nonatomic,strong) MMDrawerController * drawerController;
@@ -47,6 +48,15 @@
     [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
     [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
     
+    [self.drawerController
+     setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
+         MMDrawerControllerDrawerVisualStateBlock block;
+         block = [[MMExampleDrawerVisualStateManager sharedManager]
+                  drawerVisualStateBlockForDrawerSide:drawerSide];
+         if(block){
+             block(drawerController, drawerSide, percentVisible);
+         }
+     }];
    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
