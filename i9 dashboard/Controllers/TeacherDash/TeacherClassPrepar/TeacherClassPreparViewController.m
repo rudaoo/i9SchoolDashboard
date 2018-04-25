@@ -1,20 +1,18 @@
 //
-//  TeacherClassDetailsViewController.m
+//  TeacherClassPreparViewController.m
 //  i9 dashboard
 //
 //  Created by Rudney Camargo Pereira on 25/04/18.
 //  Copyright © 2018 Rudney Camargo Pereira. All rights reserved.
 //
 
-#import "TeacherClassDetailsViewController.h"
 #import "TeacherClassPreparViewController.h"
-#import "UIViewController+IPFUtils.h"
 
-@interface TeacherClassDetailsViewController ()
+@interface TeacherClassPreparViewController ()
 
 @end
 
-@implementation TeacherClassDetailsViewController
+@implementation TeacherClassPreparViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,12 +22,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-- (IBAction)onButtonTouched:(id)sender {
-    
-    TeacherClassPreparViewController *vc = [TeacherClassPreparViewController initFromStoryboard:@"TeacherClassPreparViewController"];
-
-    [self.navigationController pushViewController:vc animated:YES];
 }
 
 /*
