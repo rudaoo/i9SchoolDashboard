@@ -17,9 +17,11 @@
 #import "RightMenuTableViewController.h"
 #import "TeacherMenuTableViewController.h"
 #import "TeacherDashViewController.h"
+#import "TeacherClassDetailsViewController.h"
 
 @interface AppDelegate ()
 @property (nonatomic,strong) MMDrawerController * drawerController;
+@property (nonatomic,strong) TeacherDashViewController * teacherCenterViewController;
 
 @end
 
@@ -91,7 +93,7 @@
     [self.drawerController setShowsShadow:NO];
     [self.drawerController setRestorationIdentifier:@"MMDrawer"];
     [self.drawerController setMaximumRightDrawerWidth:200.0];
-    [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    //[self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
     [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
     
     [self.drawerController
@@ -109,11 +111,11 @@
     
     TeacherMenuTableViewController * leftSideDrawerViewController = [TeacherMenuTableViewController initFromStoryboard:@"TeacherMenuTableViewController"];
     
-    TeacherDashViewController *centerViewController = [TeacherDashViewController initFromStoryboard:@"TeacherDashViewController"];
+    self.teacherCenterViewController = [TeacherDashViewController initFromStoryboard:@"TeacherDashViewController"];
     
     UIViewController * rightSideDrawerViewController = [[FatherDashboardViewController alloc] init];
     
-    UINavigationController * navigationController = [[MMNavigationController alloc] initWithRootViewController:centerViewController];
+    UINavigationController * navigationController = [[MMNavigationController alloc] initWithRootViewController:self.teacherCenterViewController];
     [navigationController setRestorationIdentifier:@"MMExampleCenterNavigationControllerRestorationKey"];
     UINavigationController * rightSideNavController = [[MMNavigationController alloc] initWithRootViewController:rightSideDrawerViewController];
     [rightSideNavController setRestorationIdentifier:@"MMExampleRightNavigationControllerRestorationKey"];
@@ -138,6 +140,14 @@
              block(drawerController, drawerSide, percentVisible);
          }
      }];
+    
+}
+
+-(void) teacherpushScreen {
+    
+    TeacherClassDetailsViewController *vc = [TeacherClassDetailsViewController initFromStoryboard:@"TeacherClassDetailsViewController"];
+    [self.teacherCenterViewController.navigationController pushViewController:vc animated:NO];
+    [self.drawerController closeDrawerAnimated:YES completion:nil];
 }
 
 @end

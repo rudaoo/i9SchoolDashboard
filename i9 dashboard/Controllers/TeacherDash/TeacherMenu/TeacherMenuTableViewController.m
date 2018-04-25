@@ -7,6 +7,10 @@
 //
 
 #import "TeacherMenuTableViewController.h"
+#import "UIViewController+IPFUtils.h"
+#import "TeacherClassDetailsViewController.h"
+#import "AppDelegate.h"
+
 
 @interface TeacherMenuTableViewController ()
 
@@ -33,10 +37,12 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    //    QuestionsListOfSubjectTableViewController *vc = [QuestionsListOfSubjectTableViewController initFromStoryboard:@"Support"];
-    //
-    //    vc.currentSubject = [self.subjectsListFaq objectAtIndex:indexPath.row];
-    //    [self.navigationController pushViewController:vc animated:YES];
+    AppDelegate *appdelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    [appdelegate teacherpushScreen];
+
+//    TeacherClassDetailsViewController *vc = [TeacherClassDetailsViewController initFromStoryboard:@"TeacherClassDetailsViewController"];
+//
+//    [self.navigationController pushViewController:vc animated:YES];
     
 }
 

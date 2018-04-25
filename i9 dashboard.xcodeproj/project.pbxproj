@@ -19,6 +19,8 @@
 		2729E3CD2090DEE60024A759 /* TeacherMenuTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2729E3CC2090DEE60024A759 /* TeacherMenuTableViewController.storyboard */; };
 		2729E3D22090E00C0024A759 /* TeacherDashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2729E3CF2090E00C0024A759 /* TeacherDashViewController.m */; };
 		2729E3D32090E00C0024A759 /* TeacherDashViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2729E3D02090E00C0024A759 /* TeacherDashViewController.storyboard */; };
+		2729E3D72090E0A50024A759 /* TeacherClassDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2729E3D62090E0A50024A759 /* TeacherClassDetailsViewController.m */; };
+		2729E3D92090E0AD0024A759 /* TeacherClassDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2729E3D82090E0AD0024A759 /* TeacherClassDetailsViewController.storyboard */; };
 		27343F4E2059569B002140B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27343F4D2059569B002140B8 /* AppDelegate.m */; };
 		27343F562059569B002140B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27343F552059569B002140B8 /* Assets.xcassets */; };
 		27343F592059569B002140B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27343F572059569B002140B8 /* LaunchScreen.storyboard */; };
@@ -55,6 +57,9 @@
 		2729E3CF2090E00C0024A759 /* TeacherDashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeacherDashViewController.m; sourceTree = "<group>"; };
 		2729E3D02090E00C0024A759 /* TeacherDashViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TeacherDashViewController.storyboard; sourceTree = "<group>"; };
 		2729E3D12090E00C0024A759 /* TeacherDashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeacherDashViewController.h; sourceTree = "<group>"; };
+		2729E3D52090E0A50024A759 /* TeacherClassDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeacherClassDetailsViewController.h; sourceTree = "<group>"; };
+		2729E3D62090E0A50024A759 /* TeacherClassDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeacherClassDetailsViewController.m; sourceTree = "<group>"; };
+		2729E3D82090E0AD0024A759 /* TeacherClassDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TeacherClassDetailsViewController.storyboard; sourceTree = "<group>"; };
 		27343F492059569B002140B8 /* i9 dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "i9 dashboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27343F4C2059569B002140B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		27343F4D2059569B002140B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -139,6 +144,7 @@
 		2729E3C22090DE110024A759 /* TeacherDash */ = {
 			isa = PBXGroup;
 			children = (
+				2729E3D42090E0790024A759 /* TeacherClassDetails */,
 				2729E3CE2090DFC30024A759 /* TeacherDash */,
 				2729E3C82090DEB20024A759 /* TeacherMenu */,
 			);
@@ -163,6 +169,16 @@
 				2729E3D02090E00C0024A759 /* TeacherDashViewController.storyboard */,
 			);
 			path = TeacherDash;
+			sourceTree = "<group>";
+		};
+		2729E3D42090E0790024A759 /* TeacherClassDetails */ = {
+			isa = PBXGroup;
+			children = (
+				2729E3D52090E0A50024A759 /* TeacherClassDetailsViewController.h */,
+				2729E3D62090E0A50024A759 /* TeacherClassDetailsViewController.m */,
+				2729E3D82090E0AD0024A759 /* TeacherClassDetailsViewController.storyboard */,
+			);
+			path = TeacherClassDetails;
 			sourceTree = "<group>";
 		};
 		27343F402059569A002140B8 = {
@@ -352,6 +368,7 @@
 				2729E3D32090E00C0024A759 /* TeacherDashViewController.storyboard in Resources */,
 				2729E3C02090D96A0024A759 /* RightMenuTableViewController.storyboard in Resources */,
 				27343F562059569B002140B8 /* Assets.xcassets in Resources */,
+				2729E3D92090E0AD0024A759 /* TeacherClassDetailsViewController.storyboard in Resources */,
 				27B3A29D20595C0100C6C429 /* ItauText_A_XBd.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +439,7 @@
 				27343F4E2059569B002140B8 /* AppDelegate.m in Sources */,
 				2729E3CB2090DEDB0024A759 /* TeacherMenuTableViewController.m in Sources */,
 				2729E3A52090C85D0024A759 /* MainNavigationController.m in Sources */,
+				2729E3D72090E0A50024A759 /* TeacherClassDetailsViewController.m in Sources */,
 				27343F6820595710002140B8 /* FatherDashboardViewController.m in Sources */,
 				2729E3B92090D6110024A759 /* MMExampleDrawerVisualStateManager.m in Sources */,
 			);
