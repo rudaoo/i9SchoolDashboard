@@ -13,6 +13,8 @@
 		2729E3B52090D4800024A759 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2729E3B32090D47F0024A759 /* UIViewController+MMDrawerController.m */; };
 		2729E3B62090D4800024A759 /* MMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2729E3B42090D47F0024A759 /* MMNavigationController.m */; };
 		2729E3B92090D6110024A759 /* MMExampleDrawerVisualStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2729E3B82090D6110024A759 /* MMExampleDrawerVisualStateManager.m */; };
+		2729E3BE2090D9490024A759 /* RightMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2729E3BD2090D9490024A759 /* RightMenuTableViewController.m */; };
+		2729E3C02090D96A0024A759 /* RightMenuTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2729E3BF2090D96A0024A759 /* RightMenuTableViewController.storyboard */; };
 		27343F4E2059569B002140B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27343F4D2059569B002140B8 /* AppDelegate.m */; };
 		27343F562059569B002140B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27343F552059569B002140B8 /* Assets.xcassets */; };
 		27343F592059569B002140B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27343F572059569B002140B8 /* LaunchScreen.storyboard */; };
@@ -40,6 +42,9 @@
 		2729E3B42090D47F0024A759 /* MMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMNavigationController.m; sourceTree = "<group>"; };
 		2729E3B72090D6100024A759 /* MMExampleDrawerVisualStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMExampleDrawerVisualStateManager.h; sourceTree = "<group>"; };
 		2729E3B82090D6110024A759 /* MMExampleDrawerVisualStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMExampleDrawerVisualStateManager.m; sourceTree = "<group>"; };
+		2729E3BC2090D9490024A759 /* RightMenuTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RightMenuTableViewController.h; sourceTree = "<group>"; };
+		2729E3BD2090D9490024A759 /* RightMenuTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RightMenuTableViewController.m; sourceTree = "<group>"; };
+		2729E3BF2090D96A0024A759 /* RightMenuTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RightMenuTableViewController.storyboard; sourceTree = "<group>"; };
 		27343F492059569B002140B8 /* i9 dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "i9 dashboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27343F4C2059569B002140B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		27343F4D2059569B002140B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -93,6 +98,25 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		2729E3BA2090D91C0024A759 /* FatherViewController */ = {
+			isa = PBXGroup;
+			children = (
+				27343F6620595710002140B8 /* FatherDashboardViewController.h */,
+				27343F6720595710002140B8 /* FatherDashboardViewController.m */,
+			);
+			path = FatherViewController;
+			sourceTree = "<group>";
+		};
+		2729E3BB2090D9300024A759 /* RightMenu */ = {
+			isa = PBXGroup;
+			children = (
+				2729E3BC2090D9490024A759 /* RightMenuTableViewController.h */,
+				2729E3BD2090D9490024A759 /* RightMenuTableViewController.m */,
+				2729E3BF2090D96A0024A759 /* RightMenuTableViewController.storyboard */,
+			);
+			path = RightMenu;
+			sourceTree = "<group>";
+		};
 		27343F402059569A002140B8 = {
 			isa = PBXGroup;
 			children = (
@@ -139,9 +163,9 @@
 		27343F63205956DF002140B8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2729E3BB2090D9300024A759 /* RightMenu */,
+				2729E3BA2090D91C0024A759 /* FatherViewController */,
 				2729E3A22090C82E0024A759 /* MainNavigation */,
-				27343F6620595710002140B8 /* FatherDashboardViewController.h */,
-				27343F6720595710002140B8 /* FatherDashboardViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -276,6 +300,7 @@
 				27B3A2A120595C0100C6C429 /* itaufonts_master_24px_v1.ttf in Resources */,
 				27B3A2A020595C0100C6C429 /* ItauText_A_Bd.ttf in Resources */,
 				27B3A29F20595C0100C6C429 /* ItauText_A_Rg.ttf in Resources */,
+				2729E3C02090D96A0024A759 /* RightMenuTableViewController.storyboard in Resources */,
 				27343F562059569B002140B8 /* Assets.xcassets in Resources */,
 				27B3A29D20595C0100C6C429 /* ItauText_A_XBd.ttf in Resources */,
 			);
@@ -337,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				279AA0DC2059A3FA008E4296 /* CarouselCustomPageControl.m in Sources */,
+				2729E3BE2090D9490024A759 /* RightMenuTableViewController.m in Sources */,
 				27A6CDE92059650B00D6A105 /* ACCircularProgressBarView.m in Sources */,
 				2729E3B02090D24C0024A759 /* UIViewController+IPFUtils.m in Sources */,
 				2729E3B62090D4800024A759 /* MMNavigationController.m in Sources */,
