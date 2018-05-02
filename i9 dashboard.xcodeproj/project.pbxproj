@@ -29,6 +29,7 @@
 		27343F5C2059569B002140B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27343F5B2059569B002140B8 /* main.m */; };
 		27343F6820595710002140B8 /* FatherDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27343F6720595710002140B8 /* FatherDashboardViewController.m */; };
 		27343F6A2059571C002140B8 /* FatherDashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27343F692059571C002140B8 /* FatherDashboard.storyboard */; };
+		274329E22099F946005D3115 /* ACGraficProgressBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 274329E12099F946005D3115 /* ACGraficProgressBarView.m */; };
 		279AA0DC2059A3FA008E4296 /* CarouselCustomPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 279AA0DB2059A3FA008E4296 /* CarouselCustomPageControl.m */; };
 		27A6CDE92059650B00D6A105 /* ACCircularProgressBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A6CDE82059650B00D6A105 /* ACCircularProgressBarView.m */; };
 		27B3A29D20595C0100C6C429 /* ItauText_A_XBd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27B3A29820595BFF00C6C429 /* ItauText_A_XBd.ttf */; };
@@ -75,6 +76,8 @@
 		27343F6620595710002140B8 /* FatherDashboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FatherDashboardViewController.h; sourceTree = "<group>"; };
 		27343F6720595710002140B8 /* FatherDashboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FatherDashboardViewController.m; sourceTree = "<group>"; };
 		27343F692059571C002140B8 /* FatherDashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FatherDashboard.storyboard; sourceTree = "<group>"; };
+		274329E02099F946005D3115 /* ACGraficProgressBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACGraficProgressBarView.h; sourceTree = "<group>"; };
+		274329E12099F946005D3115 /* ACGraficProgressBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACGraficProgressBarView.m; sourceTree = "<group>"; };
 		279AA0DA2059A3FA008E4296 /* CarouselCustomPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarouselCustomPageControl.h; sourceTree = "<group>"; };
 		279AA0DB2059A3FA008E4296 /* CarouselCustomPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarouselCustomPageControl.m; sourceTree = "<group>"; };
 		27A6CDE72059650B00D6A105 /* ACCircularProgressBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCircularProgressBarView.h; sourceTree = "<group>"; };
@@ -272,6 +275,8 @@
 				279AA0DB2059A3FA008E4296 /* CarouselCustomPageControl.m */,
 				27A6CDE72059650B00D6A105 /* ACCircularProgressBarView.h */,
 				27A6CDE82059650B00D6A105 /* ACCircularProgressBarView.m */,
+				274329E02099F946005D3115 /* ACGraficProgressBarView.h */,
+				274329E12099F946005D3115 /* ACGraficProgressBarView.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -454,6 +459,7 @@
 				2729E3D22090E00C0024A759 /* TeacherDashViewController.m in Sources */,
 				2729E3B52090D4800024A759 /* UIViewController+MMDrawerController.m in Sources */,
 				27343F5C2059569B002140B8 /* main.m in Sources */,
+				274329E22099F946005D3115 /* ACGraficProgressBarView.m in Sources */,
 				27343F4E2059569B002140B8 /* AppDelegate.m in Sources */,
 				2729E3CB2090DEDB0024A759 /* TeacherMenuTableViewController.m in Sources */,
 				2729E3A52090C85D0024A759 /* MainNavigationController.m in Sources */,

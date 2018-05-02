@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="itaufonts_master_24px_v1.ttf">
+            <string>itaufonts_master_24px_v1</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="mrc-y8-kDM">
@@ -33,12 +38,33 @@
                     <view key="view" contentMode="scaleToFill" id="Y8i-ve-C7r">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sie-H4-aOE">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="itaufonts_master_24px_v1" family="itaufonts_master_24px_v1" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jir-8c-Lhr" customClass="ACGraficProgressBarView">
+                                <rect key="frame" x="123" y="141" width="80" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="96I-Yu-bSP"/>
+                                    <constraint firstAttribute="height" constant="100" id="lCC-yB-elN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jir-8c-Lhr" firstAttribute="top" secondItem="6Zn-88-7Rs" secondAttribute="top" constant="77" id="syz-2f-cXn"/>
+                            <constraint firstItem="jir-8c-Lhr" firstAttribute="leading" secondItem="6Zn-88-7Rs" secondAttribute="leading" constant="123" id="uf7-hf-Aa6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Zn-88-7Rs"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Dashboard" id="dRF-3a-FQi">
-                        <barButtonItem key="leftBarButtonItem" title="=" id="teR-1c-Cf9"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Dashboard" id="dRF-3a-FQi"/>
+                    <connections>
+                        <outlet property="leadershipProgressBar" destination="jir-8c-Lhr" id="IG8-Jy-rLc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OZH-pQ-zQl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

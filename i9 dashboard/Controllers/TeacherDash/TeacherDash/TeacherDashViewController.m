@@ -7,8 +7,11 @@
 //
 
 #import "TeacherDashViewController.h"
+#import "ACGraficProgressBarView.h"
 
 @interface TeacherDashViewController ()
+
+@property (weak, nonatomic) IBOutlet ACGraficProgressBarView *leadershipProgressBar;
 
 @end
 
@@ -17,6 +20,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithTitle:@""
+                                                                   style:UIBarButtonItemStylePlain target:self action:@selector(onButtonPopViewController)];
+    
+    [buttonItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                        [UIFont fontWithName:@"itaufonts_master_24px_v1" size:24.0], NSFontAttributeName,
+                                        nil]
+                              forState:UIControlStateNormal];
+    self.navigationItem.leftBarButtonItem = buttonItem;
+    
+    [self showItensOnScreenAnimation];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +37,12 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)showItensOnScreenAnimation{
+    
+    [self.leadershipProgressBar makeLineLayer:CGPointMake(29, 60) toPointB:CGPointMake(29, 10) andDuration:2 andColor:[UIColor orangeColor] andPercentageValue:0.5];
 }
-*/
+-(void) onButtonPopViewController{
+}
+
 
 @end
