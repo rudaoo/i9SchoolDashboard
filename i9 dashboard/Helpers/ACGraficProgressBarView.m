@@ -26,16 +26,16 @@
 
 -(void)makeLineLayer:(CGPoint)pointA toPointB:(CGPoint)pointB andDuration:(CGFloat) duration andColor:(UIColor*)color andPercentageValue:(double) percentageValue{
 
-    double pontoFinal = pointA.y * percentageValue;
+    double pontoFinal = pointB.y * percentageValue;
 
     CAShapeLayer *line = [CAShapeLayer layer];
     UIBezierPath *linePath=[UIBezierPath bezierPath];
-    [linePath moveToPoint:CGPointMake(pointA.x, pontoFinal)];
-    [linePath addLineToPoint:pointB];
+    [linePath moveToPoint:pointA];
+    [linePath addLineToPoint:CGPointMake(pointB.x, pontoFinal)];
     line.path= linePath.CGPath;
     line.fillColor = nil;
     line.opacity = 1.0;
-    line.lineWidth = 15;
+    line.lineWidth = 35;
     line.strokeColor = color.CGColor;
     
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];

@@ -12,6 +12,11 @@
 @interface TeacherDashViewController ()
 
 @property (weak, nonatomic) IBOutlet ACGraficProgressBarView *leadershipProgressBar;
+@property (weak, nonatomic) IBOutlet ACGraficProgressBarView *secondGraphic;
+@property (weak, nonatomic) IBOutlet ACGraficProgressBarView *thirdGraphic;
+@property (weak, nonatomic) IBOutlet ACGraficProgressBarView *fourthGraphic;
+@property (weak, nonatomic) IBOutlet ACGraficProgressBarView *fifithGraphic;
+@property (weak, nonatomic) IBOutlet ACGraficProgressBarView *sixthGraphic;
 
 @end
 
@@ -39,7 +44,17 @@
 
 - (void)showItensOnScreenAnimation{
     
-    [self.leadershipProgressBar makeLineLayer:CGPointMake(29, 60) toPointB:CGPointMake(29, 10) andDuration:2 andColor:[UIColor orangeColor] andPercentageValue:0.5];
+    [self.leadershipProgressBar makeLineLayer:CGPointMake(58, 340) toPointB:CGPointMake(55, 200) andDuration:2 andColor:[UIColor orangeColor] andPercentageValue:0.9];
+    
+   [self.secondGraphic makeLineLayer:CGPointMake(110, 340) toPointB:CGPointMake(110, 200) andDuration:2 andColor:[UIColor redColor] andPercentageValue:1.5];
+    
+   [self.thirdGraphic makeLineLayer:CGPointMake(160, 340) toPointB:CGPointMake(160, 200) andDuration:2 andColor:[UIColor greenColor] andPercentageValue:1.3];
+
+   [self.fourthGraphic makeLineLayer:CGPointMake(212, 340) toPointB:CGPointMake(212, 200) andDuration:2 andColor:[UIColor grayColor] andPercentageValue:0.7];
+    
+   [self.fourthGraphic makeLineLayer:CGPointMake(262, 340) toPointB:CGPointMake(262, 200) andDuration:2 andColor:[UIColor blueColor] andPercentageValue:1.2];
+
+   [self.sixthGraphic makeLineLayer:CGPointMake(313, 340) toPointB:CGPointMake(313, 200) andDuration:2 andColor:[UIColor blackColor] andPercentageValue:1];
 }
 -(void) onButtonPopViewController{
 }
