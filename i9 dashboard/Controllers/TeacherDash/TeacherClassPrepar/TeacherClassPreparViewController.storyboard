@@ -9,21 +9,340 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Bold.otf">
+            <string>SFUIText-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--Teacher Class Prepar View Controller-->
+        <!--Aula-->
         <scene sceneID="Igb-hI-RX5">
             <objects>
-                <viewController storyboardIdentifier="TeacherClassPreparViewController" id="2Zc-LU-x7a" customClass="TeacherClassPreparViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TeacherClassPreparViewController" title="Aula" id="2Zc-LU-x7a" customClass="TeacherClassPreparViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eQB-rg-Tib">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kB5-WC-3XM">
+                                <rect key="frame" x="0.0" y="20" width="375" height="1980"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rlP-LP-4BE">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1980"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7xY-dj-mjJ">
+                                                <rect key="frame" x="16" y="80" width="343" height="1880"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introdução" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ld-w6-wC3">
+                                                        <rect key="frame" x="16" y="20" width="311" height="19.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="19.5" id="Ym3-FN-LP9"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                        <color key="textColor" red="0.92549019610000005" green="0.4549019608" blue="0.015686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8I-xF-QeB">
+                                                        <rect key="frame" x="16" y="55.5" width="311" height="167.5"/>
+                                                        <string key="text">Na tela da transação, após clicar em gerar código, se você não receber o SMS em 40 segundos, o sistema indica a opção solicitar ligação.
+Você pode não ter recebido o código por alguns motivos. Veja o que fazer:Na tela da transação, após clicar em gerar código, se você não receberNa tela da transação, após clicar em gerar código, se você não receber o SMS em 40 segundos, o sistema indica a opção solicitar </string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" red="0.23529411759999999" green="0.15686274510000001" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oqX-sg-jAS">
+                                                        <rect key="frame" x="0.0" y="243" width="343" height="1"/>
+                                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="Aus-MJ-NAs"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modelo da aula" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RqZ-13-vMk">
+                                                        <rect key="frame" x="16" y="264" width="311" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="vcA-5g-QRc"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                        <color key="textColor" red="0.92549019610000005" green="0.4549019608" blue="0.015686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAw-Y8-VRE">
+                                                        <rect key="frame" x="16" y="300" width="311" height="167.5"/>
+                                                        <string key="text">Na tela da transação, após clicar em gerar código, se você não receber o SMS em 40 segundos, o sistema indica a opção solicitar ligação.
+Você pode não ter recebido o código por alguns motivos. Veja o que fazer:Na tela da transação, após clicar em gerar código, se você não receberNa tela da transação, após clicar em gerar código, se você não receber o SMS em 40 segundos, o sistema indica a opção solicitar </string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" red="0.23529411759999999" green="0.15686274510000001" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Mr-Gp-2DN">
+                                                        <rect key="frame" x="0.0" y="487.5" width="343" height="1"/>
+                                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="gIZ-YZ-tTE"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Objetivo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8E9-u5-l89">
+                                                        <rect key="frame" x="16" y="508.5" width="311" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="yUq-Sk-wSd"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                        <color key="textColor" red="0.92549019610000005" green="0.4549019608" blue="0.015686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYQ-Jq-HzI">
+                                                        <rect key="frame" x="16" y="544.5" width="311" height="167.5"/>
+                                                        <string key="text">Na tela da transação, após clicar em gerar código, se você não receber o SMS em 40 segundos, o sistema indica a opção solicitar ligação.
+Você pode não ter recebido o código por alguns motivos. Veja o que fazer:Na tela da transação, após clicar em gerar código, se você não receberNa tela da transação, após clicar em gerar código, se você não receber o SMS em 40 segundos, o sistema indica a opção solicitar </string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" red="0.23529411759999999" green="0.15686274510000001" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mQM-Wz-pQT">
+                                                        <rect key="frame" x="0.0" y="732.5" width="343" height="1"/>
+                                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="wBj-Ic-opf"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Materia" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUF-sQ-Ld9">
+                                                        <rect key="frame" x="16" y="753.5" width="311" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="2GB-dE-jr4"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                        <color key="textColor" red="0.92549019610000005" green="0.4549019608" blue="0.015686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSi-8G-GFq">
+                                                        <rect key="frame" x="16" y="790" width="311" height="167.5"/>
+                                                        <string key="text">Na tela da transação, após clicar em gerar código, se você não receber o SMS em 40 segundos, o sistema indica a opção solicitar ligação.
+Você pode não ter recebido o código por alguns motivos. Veja o que fazer:Na tela da transação, após clicar em gerar código, se você não receberNa tela da transação, após clicar em gerar código, se você não receber o SMS em 40 segundos, o sistema indica a opção solicitar </string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" red="0.23529411759999999" green="0.15686274510000001" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9N-Od-S7f">
+                                                        <rect key="frame" x="0.0" y="977.5" width="343" height="1"/>
+                                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="geV-uw-lLf"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Materiais" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5t-Rr-5hR">
+                                                        <rect key="frame" x="16" y="999" width="311" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="vCh-Gy-YhN"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                        <color key="textColor" red="0.92549019610000005" green="0.4549019608" blue="0.015686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2UD-Ww-dkb">
+                                                        <rect key="frame" x="16" y="1035" width="311" height="167.5"/>
+                                                        <string key="text">Na tela da transação, após clicar em gerar código, se você não receber o SMS em 40 segundos, o sistema indica a opção solicitar ligação.
+Você pode não ter recebido o código por alguns motivos. Veja o que fazer:Na tela da transação, após clicar em gerar código, se você não receberNa tela da transação, após clicar em gerar código, se você não receber o SMS em 40 segundos, o sistema indica a opção solicitar </string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" red="0.23529411759999999" green="0.15686274510000001" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tks-bC-TOQ">
+                                                        <rect key="frame" x="0.0" y="1222.5" width="343" height="1"/>
+                                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="zgc-vX-Vsg"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indicações" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYo-Hi-TgE">
+                                                        <rect key="frame" x="16" y="1243.5" width="311" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="9yL-QA-H6e"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                        <color key="textColor" red="0.92549019610000005" green="0.4549019608" blue="0.015686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMR-Zm-7GE">
+                                                        <rect key="frame" x="16" y="1279.5" width="311" height="167.5"/>
+                                                        <string key="text">Na tela da transação, após clicar em gerar código, se você não receber o SMS em 40 segundos, o sistema indica a opção solicitar ligação.
+Você pode não ter recebido o código por alguns motivos. Veja o que fazer:Na tela da transação, após clicar em gerar código, se você não receberNa tela da transação, após clicar em gerar código, se você não receber o SMS em 40 segundos, o sistema indica a opção solicitar </string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" red="0.23529411759999999" green="0.15686274510000001" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Gp-Af-ysH">
+                                                        <rect key="frame" x="0.0" y="1467" width="343" height="1"/>
+                                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="jYx-pU-vL3"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aplicação" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1p-7h-erw">
+                                                        <rect key="frame" x="16" y="1498" width="311" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="lbv-QT-Oia"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                        <color key="textColor" red="0.92549019610000005" green="0.4549019608" blue="0.015686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7x6-R2-LIQ">
+                                                        <rect key="frame" x="16" y="1534" width="311" height="167.5"/>
+                                                        <string key="text">Na tela da transação, após clicar em gerar código, se você não receber o SMS em 40 segundos, o sistema indica a opção solicitar ligação.
+Você pode não ter recebido o código por alguns motivos. Veja o que fazer:Na tela da transação, após clicar em gerar código, se você não receberNa tela da transação, após clicar em gerar código, se você não receber o SMS em 40 segundos, o sistema indica a opção solicitar </string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" red="0.23529411759999999" green="0.15686274510000001" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Hs-hT-nru">
+                                                        <rect key="frame" x="0.0" y="1721.5" width="343" height="1"/>
+                                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="Qeq-5u-EmR"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palavras-chave" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIZ-n0-nkC">
+                                                        <rect key="frame" x="16" y="1746" width="311" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="wDT-g5-RkL"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                        <color key="textColor" red="0.92549019610000005" green="0.4549019608" blue="0.015686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VvC-s2-EVm">
+                                                        <rect key="frame" x="16" y="1782" width="311" height="78"/>
+                                                        <string key="text">Na tela da transação, após clicar em gerar código, se você não receber o SMS em 40 segundos, o sistema indica a opção solicitar ligação.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" red="0.23529411759999999" green="0.15686274510000001" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="2UD-Ww-dkb" firstAttribute="top" secondItem="x5t-Rr-5hR" secondAttribute="bottom" constant="16" id="0DD-GX-WG8"/>
+                                                    <constraint firstItem="9Mr-Gp-2DN" firstAttribute="top" secondItem="mAw-Y8-VRE" secondAttribute="bottom" constant="20" id="1Lo-tr-vmR"/>
+                                                    <constraint firstItem="x5t-Rr-5hR" firstAttribute="leading" secondItem="CUF-sQ-Ld9" secondAttribute="leading" id="1cr-Xn-366"/>
+                                                    <constraint firstItem="7x6-R2-LIQ" firstAttribute="trailing" secondItem="N1p-7h-erw" secondAttribute="trailing" id="2dy-su-Fp4"/>
+                                                    <constraint firstItem="mAw-Y8-VRE" firstAttribute="top" secondItem="RqZ-13-vMk" secondAttribute="bottom" constant="16" id="3Ea-a3-BIp"/>
+                                                    <constraint firstItem="tks-bC-TOQ" firstAttribute="trailing" secondItem="mQM-Wz-pQT" secondAttribute="trailing" id="4WW-nr-Sfs"/>
+                                                    <constraint firstItem="zSi-8G-GFq" firstAttribute="leading" secondItem="CUF-sQ-Ld9" secondAttribute="leading" id="7Ig-sN-aMW"/>
+                                                    <constraint firstItem="CUF-sQ-Ld9" firstAttribute="trailing" secondItem="8E9-u5-l89" secondAttribute="trailing" id="8Be-gy-SSL"/>
+                                                    <constraint firstItem="yYQ-Jq-HzI" firstAttribute="top" secondItem="8E9-u5-l89" secondAttribute="bottom" constant="16" id="8T8-4J-FHz"/>
+                                                    <constraint firstItem="yYQ-Jq-HzI" firstAttribute="leading" secondItem="8E9-u5-l89" secondAttribute="leading" id="8fR-3l-IKB"/>
+                                                    <constraint firstItem="uYo-Hi-TgE" firstAttribute="trailing" secondItem="x5t-Rr-5hR" secondAttribute="trailing" id="A1D-yL-o6b"/>
+                                                    <constraint firstItem="k8I-xF-QeB" firstAttribute="trailing" secondItem="8ld-w6-wC3" secondAttribute="trailing" id="AZv-Pg-ORl"/>
+                                                    <constraint firstItem="oqX-sg-jAS" firstAttribute="leading" secondItem="7xY-dj-mjJ" secondAttribute="leading" id="AlN-le-DT5"/>
+                                                    <constraint firstItem="uYo-Hi-TgE" firstAttribute="top" secondItem="tks-bC-TOQ" secondAttribute="bottom" constant="20" id="B1z-rC-6v9"/>
+                                                    <constraint firstItem="CUF-sQ-Ld9" firstAttribute="leading" secondItem="8E9-u5-l89" secondAttribute="leading" id="Bck-6A-jqz"/>
+                                                    <constraint firstItem="IMR-Zm-7GE" firstAttribute="trailing" secondItem="uYo-Hi-TgE" secondAttribute="trailing" id="BoP-ig-Xz2"/>
+                                                    <constraint firstItem="M9N-Od-S7f" firstAttribute="trailing" secondItem="mQM-Wz-pQT" secondAttribute="trailing" id="BrP-T6-s4J"/>
+                                                    <constraint firstItem="M9N-Od-S7f" firstAttribute="leading" secondItem="mQM-Wz-pQT" secondAttribute="leading" id="D4f-OD-8vF"/>
+                                                    <constraint firstItem="N1p-7h-erw" firstAttribute="leading" secondItem="uYo-Hi-TgE" secondAttribute="leading" id="DAp-k0-dg5"/>
+                                                    <constraint firstAttribute="trailing" secondItem="k8I-xF-QeB" secondAttribute="trailing" constant="16" id="DaA-qW-ohS"/>
+                                                    <constraint firstItem="6Gp-Af-ysH" firstAttribute="top" secondItem="IMR-Zm-7GE" secondAttribute="bottom" constant="20" id="DkT-Q2-IQe"/>
+                                                    <constraint firstItem="VvC-s2-EVm" firstAttribute="trailing" secondItem="OIZ-n0-nkC" secondAttribute="trailing" id="Fil-mz-Hy9"/>
+                                                    <constraint firstItem="IMR-Zm-7GE" firstAttribute="top" secondItem="uYo-Hi-TgE" secondAttribute="bottom" constant="16" id="Hzj-tX-3Eo"/>
+                                                    <constraint firstItem="8ld-w6-wC3" firstAttribute="leading" secondItem="7xY-dj-mjJ" secondAttribute="leading" constant="16" id="Ixg-j5-678"/>
+                                                    <constraint firstItem="RqZ-13-vMk" firstAttribute="leading" secondItem="8ld-w6-wC3" secondAttribute="leading" id="LNR-Ds-FNG"/>
+                                                    <constraint firstItem="yYQ-Jq-HzI" firstAttribute="trailing" secondItem="8E9-u5-l89" secondAttribute="trailing" id="LNj-LV-UNX"/>
+                                                    <constraint firstItem="x5t-Rr-5hR" firstAttribute="top" secondItem="M9N-Od-S7f" secondAttribute="bottom" constant="20.5" id="LZl-jh-qKt"/>
+                                                    <constraint firstItem="6Gp-Af-ysH" firstAttribute="trailing" secondItem="tks-bC-TOQ" secondAttribute="trailing" id="N6c-eZ-i9z"/>
+                                                    <constraint firstItem="7x6-R2-LIQ" firstAttribute="leading" secondItem="N1p-7h-erw" secondAttribute="leading" id="P7K-zi-iCZ"/>
+                                                    <constraint firstItem="tks-bC-TOQ" firstAttribute="top" secondItem="2UD-Ww-dkb" secondAttribute="bottom" constant="20" id="QLI-Ad-5ex"/>
+                                                    <constraint firstItem="N1p-7h-erw" firstAttribute="top" secondItem="6Gp-Af-ysH" secondAttribute="bottom" constant="30" id="QrR-0c-h3D"/>
+                                                    <constraint firstItem="6Gp-Af-ysH" firstAttribute="leading" secondItem="tks-bC-TOQ" secondAttribute="leading" id="RM9-an-6BC"/>
+                                                    <constraint firstAttribute="trailing" secondItem="oqX-sg-jAS" secondAttribute="trailing" id="Res-ou-6KX"/>
+                                                    <constraint firstItem="mQM-Wz-pQT" firstAttribute="trailing" secondItem="oqX-sg-jAS" secondAttribute="trailing" id="U6f-yu-okr"/>
+                                                    <constraint firstItem="IMR-Zm-7GE" firstAttribute="leading" secondItem="uYo-Hi-TgE" secondAttribute="leading" id="UCM-l3-zSC"/>
+                                                    <constraint firstItem="k8I-xF-QeB" firstAttribute="top" secondItem="8ld-w6-wC3" secondAttribute="bottom" constant="16" id="UeJ-wZ-R5g"/>
+                                                    <constraint firstItem="RqZ-13-vMk" firstAttribute="top" secondItem="oqX-sg-jAS" secondAttribute="bottom" constant="20" id="Vt8-uu-ujg"/>
+                                                    <constraint firstItem="VvC-s2-EVm" firstAttribute="leading" secondItem="OIZ-n0-nkC" secondAttribute="leading" id="W8M-uY-Ml2"/>
+                                                    <constraint firstItem="8Hs-hT-nru" firstAttribute="trailing" secondItem="tks-bC-TOQ" secondAttribute="trailing" id="XTW-ee-4ep"/>
+                                                    <constraint firstItem="2UD-Ww-dkb" firstAttribute="leading" secondItem="x5t-Rr-5hR" secondAttribute="leading" id="YJh-n6-TGe"/>
+                                                    <constraint firstItem="OIZ-n0-nkC" firstAttribute="trailing" secondItem="N1p-7h-erw" secondAttribute="trailing" id="YYZ-bl-Ff8"/>
+                                                    <constraint firstItem="zSi-8G-GFq" firstAttribute="trailing" secondItem="CUF-sQ-Ld9" secondAttribute="trailing" id="YsM-TI-Zci"/>
+                                                    <constraint firstItem="N1p-7h-erw" firstAttribute="trailing" secondItem="uYo-Hi-TgE" secondAttribute="trailing" id="Yxw-HK-BRN"/>
+                                                    <constraint firstItem="mQM-Wz-pQT" firstAttribute="top" secondItem="yYQ-Jq-HzI" secondAttribute="bottom" constant="20" id="aGr-fI-335"/>
+                                                    <constraint firstItem="mAw-Y8-VRE" firstAttribute="leading" secondItem="RqZ-13-vMk" secondAttribute="leading" id="ar5-HV-YH0"/>
+                                                    <constraint firstItem="2UD-Ww-dkb" firstAttribute="trailing" secondItem="x5t-Rr-5hR" secondAttribute="trailing" id="b18-J3-qms"/>
+                                                    <constraint firstItem="7x6-R2-LIQ" firstAttribute="top" secondItem="N1p-7h-erw" secondAttribute="bottom" constant="16" id="bWF-fN-7o0"/>
+                                                    <constraint firstItem="9Mr-Gp-2DN" firstAttribute="trailing" secondItem="oqX-sg-jAS" secondAttribute="trailing" id="c97-Z6-3Dh"/>
+                                                    <constraint firstItem="8E9-u5-l89" firstAttribute="leading" secondItem="8ld-w6-wC3" secondAttribute="leading" id="ds8-kS-XJq"/>
+                                                    <constraint firstItem="8E9-u5-l89" firstAttribute="trailing" secondItem="8ld-w6-wC3" secondAttribute="trailing" id="hES-C0-U5N"/>
+                                                    <constraint firstItem="9Mr-Gp-2DN" firstAttribute="leading" secondItem="oqX-sg-jAS" secondAttribute="leading" id="iCN-ud-LLz"/>
+                                                    <constraint firstItem="mAw-Y8-VRE" firstAttribute="trailing" secondItem="RqZ-13-vMk" secondAttribute="trailing" id="jcS-ze-JWg"/>
+                                                    <constraint firstItem="OIZ-n0-nkC" firstAttribute="leading" secondItem="N1p-7h-erw" secondAttribute="leading" id="jji-mP-5Jn"/>
+                                                    <constraint firstItem="x5t-Rr-5hR" firstAttribute="trailing" secondItem="CUF-sQ-Ld9" secondAttribute="trailing" id="lSQ-np-scT"/>
+                                                    <constraint firstItem="CUF-sQ-Ld9" firstAttribute="top" secondItem="mQM-Wz-pQT" secondAttribute="bottom" constant="20" id="mDi-hk-Azc"/>
+                                                    <constraint firstItem="RqZ-13-vMk" firstAttribute="trailing" secondItem="8ld-w6-wC3" secondAttribute="trailing" id="odJ-Fg-6bL"/>
+                                                    <constraint firstItem="M9N-Od-S7f" firstAttribute="top" secondItem="zSi-8G-GFq" secondAttribute="bottom" constant="20" id="p5R-mS-ptx"/>
+                                                    <constraint firstItem="zSi-8G-GFq" firstAttribute="top" secondItem="CUF-sQ-Ld9" secondAttribute="bottom" constant="16" id="pqk-JP-I8S"/>
+                                                    <constraint firstItem="8Hs-hT-nru" firstAttribute="top" secondItem="7x6-R2-LIQ" secondAttribute="bottom" constant="20" id="q71-B3-hEt"/>
+                                                    <constraint firstItem="uYo-Hi-TgE" firstAttribute="leading" secondItem="x5t-Rr-5hR" secondAttribute="leading" id="qBu-Jt-dna"/>
+                                                    <constraint firstItem="oqX-sg-jAS" firstAttribute="top" secondItem="k8I-xF-QeB" secondAttribute="bottom" constant="20" id="qLJ-oF-SHm"/>
+                                                    <constraint firstItem="8E9-u5-l89" firstAttribute="top" secondItem="9Mr-Gp-2DN" secondAttribute="bottom" constant="20" id="qMS-Xa-dat"/>
+                                                    <constraint firstItem="k8I-xF-QeB" firstAttribute="leading" secondItem="8ld-w6-wC3" secondAttribute="leading" id="rgr-Rv-RKm"/>
+                                                    <constraint firstItem="8Hs-hT-nru" firstAttribute="leading" secondItem="tks-bC-TOQ" secondAttribute="leading" id="rmu-uI-c2f"/>
+                                                    <constraint firstItem="mQM-Wz-pQT" firstAttribute="leading" secondItem="oqX-sg-jAS" secondAttribute="leading" id="s3K-Kf-5Ig"/>
+                                                    <constraint firstItem="OIZ-n0-nkC" firstAttribute="top" secondItem="8Hs-hT-nru" secondAttribute="bottom" constant="23.5" id="sdH-KA-q0X"/>
+                                                    <constraint firstItem="VvC-s2-EVm" firstAttribute="top" secondItem="OIZ-n0-nkC" secondAttribute="bottom" constant="16" id="twd-9G-3qS"/>
+                                                    <constraint firstItem="8ld-w6-wC3" firstAttribute="top" secondItem="7xY-dj-mjJ" secondAttribute="top" constant="20" id="txM-ZQ-MMW"/>
+                                                    <constraint firstAttribute="bottom" secondItem="VvC-s2-EVm" secondAttribute="bottom" constant="20" id="zWA-dx-hnd"/>
+                                                    <constraint firstItem="tks-bC-TOQ" firstAttribute="leading" secondItem="mQM-Wz-pQT" secondAttribute="leading" id="zxA-09-lmy"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="35"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Metodo de preparo da aula :" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Al1-Ik-kr5">
+                                                <rect key="frame" x="16" y="20" width="343" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="BoO-6d-YJH"/>
+                                                    <constraint firstAttribute="width" constant="343" id="rkc-Pk-9P9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="20"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.93725490196078431" green="0.91764705882352937" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="7xY-dj-mjJ" firstAttribute="top" secondItem="Al1-Ik-kr5" secondAttribute="bottom" constant="20" id="5oH-A5-2EQ"/>
+                                            <constraint firstItem="7xY-dj-mjJ" firstAttribute="leading" secondItem="Al1-Ik-kr5" secondAttribute="leading" id="6V0-XB-yXI"/>
+                                            <constraint firstItem="7xY-dj-mjJ" firstAttribute="trailing" secondItem="Al1-Ik-kr5" secondAttribute="trailing" id="8h3-5a-WVb"/>
+                                            <constraint firstAttribute="bottom" secondItem="7xY-dj-mjJ" secondAttribute="bottom" constant="20" id="ApV-Im-xvQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="Al1-Ik-kr5" secondAttribute="trailing" constant="16" id="Mg1-PP-QJn"/>
+                                            <constraint firstItem="Al1-Ik-kr5" firstAttribute="top" secondItem="rlP-LP-4BE" secondAttribute="top" constant="20" id="Zrt-n9-QMf"/>
+                                            <constraint firstItem="Al1-Ik-kr5" firstAttribute="leading" secondItem="rlP-LP-4BE" secondAttribute="leading" constant="16" id="rWc-TW-lJh"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rlP-LP-4BE" firstAttribute="width" secondItem="kB5-WC-3XM" secondAttribute="width" id="4od-Mz-38V"/>
+                                    <constraint firstItem="rlP-LP-4BE" firstAttribute="height" relation="greaterThanOrEqual" secondItem="kB5-WC-3XM" secondAttribute="height" id="FDq-j8-8ye"/>
+                                    <constraint firstItem="rlP-LP-4BE" firstAttribute="leading" secondItem="kB5-WC-3XM" secondAttribute="leading" id="eZl-Es-n69"/>
+                                    <constraint firstAttribute="bottom" secondItem="rlP-LP-4BE" secondAttribute="bottom" id="yNj-63-7XU"/>
+                                    <constraint firstItem="rlP-LP-4BE" firstAttribute="top" secondItem="kB5-WC-3XM" secondAttribute="top" id="ytB-zi-ZYo"/>
+                                    <constraint firstAttribute="trailing" secondItem="rlP-LP-4BE" secondAttribute="trailing" id="znw-1L-VVP"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.91764705882352937" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="kB5-WC-3XM" firstAttribute="leading" secondItem="oM3-4p-g8A" secondAttribute="leading" id="9YR-ha-STg"/>
+                            <constraint firstItem="kB5-WC-3XM" firstAttribute="top" secondItem="oM3-4p-g8A" secondAttribute="top" id="GFv-SE-1bB"/>
+                            <constraint firstItem="oM3-4p-g8A" firstAttribute="trailing" secondItem="kB5-WC-3XM" secondAttribute="trailing" id="iZB-tX-iuf"/>
+                            <constraint firstItem="oM3-4p-g8A" firstAttribute="bottom" secondItem="kB5-WC-3XM" secondAttribute="bottom" id="oln-OI-IpH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="oM3-4p-g8A"/>
                     </view>
+                    <size key="freeformSize" width="375" height="2000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0KA-AN-W7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="164" y="160"/>
+            <point key="canvasLocation" x="164" y="158.32083958020991"/>
         </scene>
     </scenes>
 </document>
