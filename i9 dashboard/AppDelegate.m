@@ -18,6 +18,9 @@
 #import "TeacherMenuTableViewController.h"
 #import "TeacherDashViewController.h"
 #import "TeacherClassDetailsViewController.h"
+#import "FriendsListTableViewController.h"
+#import "SonMenuTableViewController.h"
+#import "SonDashboardViewController.h"
 
 @interface AppDelegate ()
 @property (nonatomic,strong) MMDrawerController * drawerController;
@@ -31,7 +34,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [self fatherApp];
+    [self sonApp];
    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
@@ -78,7 +81,7 @@
     
     FatherDashboardViewController *centerViewController = [FatherDashboardViewController initFromStoryboard:@"FatherDashboard"];
     
-    UIViewController * rightSideDrawerViewController = [[FatherDashboardViewController alloc] init];
+    FriendsListTableViewController * rightSideDrawerViewController = [FriendsListTableViewController initFromStoryboard:@"FriendsListTableViewController"];
     
     UINavigationController * navigationController = [[MMNavigationController alloc] initWithRootViewController:centerViewController];
     [navigationController setRestorationIdentifier:@"MMExampleCenterNavigationControllerRestorationKey2"];
@@ -92,7 +95,7 @@
                              rightDrawerViewController:nil];
     [self.drawerController setShowsShadow:NO];
     [self.drawerController setRestorationIdentifier:@"MMDrawer2"];
-    [self.drawerController setMaximumRightDrawerWidth:200.0];
+    [self.drawerController setMaximumRightDrawerWidth:300.0];
     [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
     [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
     
@@ -141,6 +144,42 @@
          }
      }];
     
+}
+
+
+-(void) sonApp {
+    
+    SonMenuTableViewController * leftSideDrawerViewController = [SonMenuTableViewController initFromStoryboard:@"SonMenuTableViewController"];
+    
+    SonDashboardViewController *centerViewController = [SonDashboardViewController initFromStoryboard:@"SonDashboardViewController"];
+    
+    FriendsListTableViewController * rightSideDrawerViewController = [FriendsListTableViewController initFromStoryboard:@"FriendsListTableViewController"];
+    
+    UINavigationController * navigationController = [[MMNavigationController alloc] initWithRootViewController:centerViewController];
+    [navigationController setRestorationIdentifier:@"MMExampleCenterNavigationControllerRestorationKey2"];
+    UINavigationController * rightSideNavController = [[MMNavigationController alloc] initWithRootViewController:rightSideDrawerViewController];
+    [rightSideNavController setRestorationIdentifier:@"MMExampleRightNavigationControllerRestorationKey2"];
+    UINavigationController * leftSideNavController = [[MMNavigationController alloc] initWithRootViewController:leftSideDrawerViewController];
+    [leftSideNavController setRestorationIdentifier:@"MMExampleLeftNavigationControllerRestorationKey2"];
+    self.drawerController = [[MMDrawerController alloc]
+                             initWithCenterViewController:navigationController
+                             leftDrawerViewController:leftSideNavController
+                             rightDrawerViewController:rightSideDrawerViewController];
+    [self.drawerController setShowsShadow:NO];
+    [self.drawerController setRestorationIdentifier:@"MMDrawer2"];
+    [self.drawerController setMaximumRightDrawerWidth:300.0];
+    [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+    
+    [self.drawerController
+     setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
+         MMDrawerControllerDrawerVisualStateBlock block;
+         block = [[MMExampleDrawerVisualStateManager sharedManager]
+                  drawerVisualStateBlockForDrawerSide:drawerSide];
+         if(block){
+             block(drawerController, drawerSide, percentVisible);
+         }
+     }];
 }
 
 -(void) teacherpushScreen {
