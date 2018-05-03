@@ -390,6 +390,7 @@
                             </pageControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZEq-vP-lnx">
                                 <rect key="frame" x="0.0" y="381" width="375" height="286"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.91764705882352937" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="RgY-jd-Ykr" kind="embed" id="rsc-iD-Jne"/>
                                 </connections>
@@ -409,9 +410,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yTL-Z5-d2L"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Dashboard" id="2Nk-l6-z2L">
-                        <barButtonItem key="leftBarButtonItem" title="=" style="plain" id="Lla-4h-yPz"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Dashboard" id="2Nk-l6-z2L"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="focusProgressBar" destination="j6f-wO-syE" id="bTu-97-kHk"/>
@@ -439,7 +438,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zr7-1k-Rt2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="286"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.91764705882352937" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection id="nVt-dh-0OM">
                                 <cells>

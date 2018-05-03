@@ -32,6 +32,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithTitle:@""
+                                                                   style:UIBarButtonItemStylePlain target:self action:@selector(onButtonPopViewController)];
+    
+    [buttonItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                        [UIFont fontWithName:@"itaufonts_master_24px_v1" size:24.0], NSFontAttributeName,
+                                        nil]
+                              forState:UIControlStateNormal];
+    self.navigationItem.leftBarButtonItem = buttonItem;
     [self setupInterface];
 }
 
@@ -97,6 +105,10 @@
         
     }
 }
+
+-(void) onButtonPopViewController{
+}
+
 
 
 - (void)progressBarDidComplete{
