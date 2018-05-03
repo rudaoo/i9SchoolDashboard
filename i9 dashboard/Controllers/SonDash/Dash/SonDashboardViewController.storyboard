@@ -10,6 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
         <array key="ItauText_A_Bd.ttf">
             <string>ItauTextApp-Bold</string>
         </array>
@@ -76,6 +79,24 @@ Numero de chamada : 19 ID : #24233524</string>
                                     <constraint firstAttribute="height" constant="1" id="xBZ-Q1-2nY"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhP-Id-ZBg">
+                                <rect key="frame" x="67" y="150" width="240" height="100"/>
+                                <color key="backgroundColor" red="0.92549019607843142" green="0.4392156862745098" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="QTq-DG-hKj"/>
+                                    <constraint firstAttribute="height" constant="100" id="h8J-vG-hxn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="28"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Desafiar Amigos">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plane" translatesAutoresizingMaskIntoConstraints="NO" id="L2g-ba-G89">
                                 <rect key="frame" x="127" y="300" width="88" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -85,9 +106,11 @@ Numero de chamada : 19 ID : #24233524</string>
                         <constraints>
                             <constraint firstItem="Uj7-eM-VFh" firstAttribute="trailing" secondItem="42X-kf-TmM" secondAttribute="trailing" id="31o-pk-EfR"/>
                             <constraint firstItem="Uj7-eM-VFh" firstAttribute="trailing" secondItem="N9Z-OD-q1D" secondAttribute="trailing" constant="16" id="9Fj-nL-84p"/>
+                            <constraint firstItem="bhP-Id-ZBg" firstAttribute="top" secondItem="DwO-gq-Oun" secondAttribute="bottom" constant="30" id="KY8-GP-CKK"/>
                             <constraint firstItem="Aro-Va-75P" firstAttribute="trailing" secondItem="Wd4-tS-VU8" secondAttribute="trailing" id="MF7-TS-Bqr"/>
                             <constraint firstItem="m3e-Yw-sTe" firstAttribute="trailing" secondItem="Uj7-eM-VFh" secondAttribute="trailing" id="NzV-zc-Ilk"/>
                             <constraint firstItem="m3e-Yw-sTe" firstAttribute="bottom" secondItem="Uj7-eM-VFh" secondAttribute="bottom" id="OHa-Pc-vU4"/>
+                            <constraint firstItem="bhP-Id-ZBg" firstAttribute="centerX" secondItem="DHP-Iu-9BA" secondAttribute="centerX" id="PeK-5m-1tE"/>
                             <constraint firstItem="N9Z-OD-q1D" firstAttribute="leading" secondItem="Uj7-eM-VFh" secondAttribute="leading" constant="16" id="a31-Ff-REl"/>
                             <constraint firstItem="DwO-gq-Oun" firstAttribute="leading" secondItem="Uj7-eM-VFh" secondAttribute="leading" constant="20" id="bsi-4n-9tl"/>
                             <constraint firstItem="Wd4-tS-VU8" firstAttribute="top" secondItem="DwO-gq-Oun" secondAttribute="top" id="jfP-Ju-GT4"/>
