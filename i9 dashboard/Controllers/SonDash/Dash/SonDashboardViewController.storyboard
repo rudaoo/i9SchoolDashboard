@@ -9,6 +9,17 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="ItauText_A_Bd.ttf">
+            <string>ItauTextApp-Bold</string>
+        </array>
+        <array key="ItauText_A_Rg.ttf">
+            <string>ItauTextApp-Regular</string>
+        </array>
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Dashboard-->
         <scene sceneID="S6d-b0-PW6">
@@ -18,24 +29,306 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMr-5R-qpL">
-                                <rect key="frame" x="166" y="323" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kaiky" translatesAutoresizingMaskIntoConstraints="NO" id="DwO-gq-Oun">
+                                <rect key="frame" x="20" y="40" width="70" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="5v3-eU-VAu"/>
+                                    <constraint firstAttribute="height" constant="80" id="xvy-eq-2qq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Douglas Sobral" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Wd4-tS-VU8">
+                                <rect key="frame" x="98" y="40" width="147" height="19"/>
+                                <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Aro-Va-75P">
+                                <rect key="frame" x="98" y="58" width="147" height="50.5"/>
+                                <string key="text">6ª série      Turma : B
+Numero de chamada : 19 ID : #24233524</string>
+                                <fontDescription key="fontDescription" name="ItauTextApp-Bold" family="Itau Text App" pointSize="13"/>
+                                <color key="textColor" red="0.92549019607843142" green="0.4392156862745098" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ultimos desafios :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9Z-OD-q1D">
+                                <rect key="frame" x="16" y="352" width="343" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="Y2g-gD-sZH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <color key="textColor" red="0.35686274509999999" green="0.31764705879999999" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m3e-Yw-sTe">
+                                <rect key="frame" x="0.0" y="381" width="375" height="286"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.91764705879999997" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="286" id="nAn-oF-oFz"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="89I-ol-JiM" kind="embed" id="lOK-Vf-Xh8"/>
+                                </connections>
+                            </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="42X-kf-TmM">
+                                <rect key="frame" x="0.0" y="380" width="375" height="1"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="xBZ-Q1-2nY"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.91764705882352937" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="eMr-5R-qpL" firstAttribute="centerY" secondItem="DHP-Iu-9BA" secondAttribute="centerY" id="5rL-Xd-R0y"/>
-                            <constraint firstItem="eMr-5R-qpL" firstAttribute="centerX" secondItem="DHP-Iu-9BA" secondAttribute="centerX" id="oi4-dF-fjf"/>
+                            <constraint firstItem="Uj7-eM-VFh" firstAttribute="trailing" secondItem="42X-kf-TmM" secondAttribute="trailing" id="31o-pk-EfR"/>
+                            <constraint firstItem="Uj7-eM-VFh" firstAttribute="trailing" secondItem="N9Z-OD-q1D" secondAttribute="trailing" constant="16" id="9Fj-nL-84p"/>
+                            <constraint firstItem="Aro-Va-75P" firstAttribute="trailing" secondItem="Wd4-tS-VU8" secondAttribute="trailing" id="MF7-TS-Bqr"/>
+                            <constraint firstItem="m3e-Yw-sTe" firstAttribute="trailing" secondItem="Uj7-eM-VFh" secondAttribute="trailing" id="NzV-zc-Ilk"/>
+                            <constraint firstItem="m3e-Yw-sTe" firstAttribute="bottom" secondItem="Uj7-eM-VFh" secondAttribute="bottom" id="OHa-Pc-vU4"/>
+                            <constraint firstItem="N9Z-OD-q1D" firstAttribute="leading" secondItem="Uj7-eM-VFh" secondAttribute="leading" constant="16" id="a31-Ff-REl"/>
+                            <constraint firstItem="DwO-gq-Oun" firstAttribute="leading" secondItem="Uj7-eM-VFh" secondAttribute="leading" constant="20" id="bsi-4n-9tl"/>
+                            <constraint firstItem="Wd4-tS-VU8" firstAttribute="top" secondItem="DwO-gq-Oun" secondAttribute="top" id="jfP-Ju-GT4"/>
+                            <constraint firstItem="DwO-gq-Oun" firstAttribute="top" secondItem="Uj7-eM-VFh" secondAttribute="top" constant="20" id="n5F-3X-lGb"/>
+                            <constraint firstItem="m3e-Yw-sTe" firstAttribute="top" secondItem="N9Z-OD-q1D" secondAttribute="bottom" constant="10" id="nCp-EX-BvG"/>
+                            <constraint firstItem="42X-kf-TmM" firstAttribute="top" secondItem="N9Z-OD-q1D" secondAttribute="bottom" constant="9" id="rNn-PP-fEZ"/>
+                            <constraint firstItem="Aro-Va-75P" firstAttribute="top" secondItem="Wd4-tS-VU8" secondAttribute="bottom" constant="-1" id="rfi-AH-ctQ"/>
+                            <constraint firstItem="m3e-Yw-sTe" firstAttribute="leading" secondItem="Uj7-eM-VFh" secondAttribute="leading" id="ryT-PJ-4uc"/>
+                            <constraint firstItem="Aro-Va-75P" firstAttribute="leading" secondItem="Wd4-tS-VU8" secondAttribute="leading" id="shq-bL-gfX"/>
+                            <constraint firstItem="42X-kf-TmM" firstAttribute="leading" secondItem="Uj7-eM-VFh" secondAttribute="leading" id="uxM-4w-lSP"/>
+                            <constraint firstItem="Wd4-tS-VU8" firstAttribute="leading" secondItem="DwO-gq-Oun" secondAttribute="trailing" constant="8" id="xYV-wy-bpe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Uj7-eM-VFh"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nd2-gy-Ecv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="159" y="147"/>
+            <point key="canvasLocation" x="157.59999999999999" y="146.17691154422789"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="HhC-L2-xbj">
+            <objects>
+                <tableViewController id="89I-ol-JiM" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aig-eR-yKx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="286"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.91764705879999997" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection id="EJi-dk-TN1">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="114" id="Qbq-Nz-MZi">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="114"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qbq-Nz-MZi" id="De7-Sn-QQS">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="113.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seg - 22/02/18" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Zi-gJ-ThM">
+                                                    <rect key="frame" x="16" y="15" width="309" height="20"/>
+                                                    <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="15"/>
+                                                    <color key="textColor" red="0.92549019607843142" green="0.4392156862745098" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7° labirinto" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYJ-xP-K5h">
+                                                    <rect key="frame" x="16" y="51" width="309" height="36.5"/>
+                                                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="31"/>
+                                                    <color key="textColor" red="0.1450980392" green="0.1333333333" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vencedor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6n8-zZ-tpZ">
+                                                    <rect key="frame" x="261" y="15" width="64" height="20"/>
+                                                    <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.93725490199999995" green="0.91764705879999997" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="6n8-zZ-tpZ" firstAttribute="centerY" secondItem="4Zi-gJ-ThM" secondAttribute="centerY" id="1Pd-nQ-8qc"/>
+                                                <constraint firstItem="4Zi-gJ-ThM" firstAttribute="top" secondItem="De7-Sn-QQS" secondAttribute="top" constant="15" id="8T7-TK-uJp"/>
+                                                <constraint firstItem="PYJ-xP-K5h" firstAttribute="leading" secondItem="4Zi-gJ-ThM" secondAttribute="leading" id="9uK-FQ-Z6t"/>
+                                                <constraint firstItem="PYJ-xP-K5h" firstAttribute="trailing" secondItem="4Zi-gJ-ThM" secondAttribute="trailing" id="Ub9-sV-SW9"/>
+                                                <constraint firstAttribute="trailing" secondItem="4Zi-gJ-ThM" secondAttribute="trailing" constant="16" id="cUB-R3-x6A"/>
+                                                <constraint firstItem="6n8-zZ-tpZ" firstAttribute="trailing" secondItem="4Zi-gJ-ThM" secondAttribute="trailing" id="cXe-st-GKf"/>
+                                                <constraint firstItem="4Zi-gJ-ThM" firstAttribute="leading" secondItem="De7-Sn-QQS" secondAttribute="leading" constant="16" id="gnm-KY-BHr"/>
+                                                <constraint firstItem="PYJ-xP-K5h" firstAttribute="top" secondItem="4Zi-gJ-ThM" secondAttribute="bottom" constant="16" id="oEE-3K-t3C"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.91764705879999997" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="114" id="gZY-dI-r42">
+                                        <rect key="frame" x="0.0" y="114" width="375" height="114"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gZY-dI-r42" id="TfJ-Ia-cg9">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="113.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qua - 13/01/18" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEr-Ss-8Xp">
+                                                    <rect key="frame" x="16" y="15" width="309" height="20"/>
+                                                    <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="15"/>
+                                                    <color key="textColor" red="0.92549019610000005" green="0.43921568630000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Corrida lógica" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zh-AC-ef6">
+                                                    <rect key="frame" x="16" y="51" width="309" height="37"/>
+                                                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="31"/>
+                                                    <color key="textColor" red="0.1450980392" green="0.1333333333" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Derrota" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQE-vR-Rjb">
+                                                    <rect key="frame" x="272.5" y="15" width="52.5" height="20"/>
+                                                    <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="15"/>
+                                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.93725490199999995" green="0.91764705879999997" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="KQE-vR-Rjb" firstAttribute="centerY" secondItem="MEr-Ss-8Xp" secondAttribute="centerY" id="4mn-dX-g57"/>
+                                                <constraint firstItem="MEr-Ss-8Xp" firstAttribute="top" secondItem="TfJ-Ia-cg9" secondAttribute="top" constant="15" id="M04-Tc-IAg"/>
+                                                <constraint firstItem="9zh-AC-ef6" firstAttribute="leading" secondItem="MEr-Ss-8Xp" secondAttribute="leading" id="NRa-38-500"/>
+                                                <constraint firstItem="9zh-AC-ef6" firstAttribute="top" secondItem="MEr-Ss-8Xp" secondAttribute="bottom" constant="16" id="hCe-Sn-dyi"/>
+                                                <constraint firstItem="KQE-vR-Rjb" firstAttribute="trailing" secondItem="MEr-Ss-8Xp" secondAttribute="trailing" id="nSL-jc-4fK"/>
+                                                <constraint firstAttribute="trailing" secondItem="MEr-Ss-8Xp" secondAttribute="trailing" constant="16" id="rZ9-lh-jnQ"/>
+                                                <constraint firstItem="MEr-Ss-8Xp" firstAttribute="leading" secondItem="TfJ-Ia-cg9" secondAttribute="leading" constant="16" id="uWx-oy-LTT"/>
+                                                <constraint firstItem="9zh-AC-ef6" firstAttribute="trailing" secondItem="MEr-Ss-8Xp" secondAttribute="trailing" id="yoD-zF-M2P"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.91764705879999997" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="114" id="Shn-5Z-NVk">
+                                        <rect key="frame" x="0.0" y="228" width="375" height="114"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Shn-5Z-NVk" id="xUh-nt-6OL">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="113.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qua - 19/11/17" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwa-nk-ONu">
+                                                    <rect key="frame" x="16" y="15" width="309" height="20"/>
+                                                    <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="15"/>
+                                                    <color key="textColor" red="0.92549019610000005" green="0.43921568630000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recursos escasos" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bl4-E5-bdv">
+                                                    <rect key="frame" x="16" y="51" width="309" height="37"/>
+                                                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="31"/>
+                                                    <color key="textColor" red="0.1450980392" green="0.1333333333" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Derrota" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEB-Cx-3b1">
+                                                    <rect key="frame" x="272.5" y="15" width="52.5" height="20"/>
+                                                    <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="15"/>
+                                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.93725490199999995" green="0.91764705879999997" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="Bl4-E5-bdv" firstAttribute="top" secondItem="mwa-nk-ONu" secondAttribute="bottom" constant="16" id="44j-tz-IS3"/>
+                                                <constraint firstItem="Bl4-E5-bdv" firstAttribute="leading" secondItem="mwa-nk-ONu" secondAttribute="leading" id="4C7-xJ-Vdd"/>
+                                                <constraint firstItem="tEB-Cx-3b1" firstAttribute="trailing" secondItem="mwa-nk-ONu" secondAttribute="trailing" id="6gu-Z6-woY"/>
+                                                <constraint firstItem="tEB-Cx-3b1" firstAttribute="centerY" secondItem="mwa-nk-ONu" secondAttribute="centerY" id="Gon-l8-YAA"/>
+                                                <constraint firstItem="Bl4-E5-bdv" firstAttribute="trailing" secondItem="mwa-nk-ONu" secondAttribute="trailing" id="XFy-Qv-X6W"/>
+                                                <constraint firstAttribute="trailing" secondItem="mwa-nk-ONu" secondAttribute="trailing" constant="16" id="YG0-s8-sNh"/>
+                                                <constraint firstItem="mwa-nk-ONu" firstAttribute="leading" secondItem="xUh-nt-6OL" secondAttribute="leading" constant="16" id="mEc-2x-SCf"/>
+                                                <constraint firstItem="mwa-nk-ONu" firstAttribute="top" secondItem="xUh-nt-6OL" secondAttribute="top" constant="15" id="xoy-jl-vTl"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.91764705879999997" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="114" id="8O9-lD-6AH">
+                                        <rect key="frame" x="0.0" y="342" width="375" height="114"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8O9-lD-6AH" id="w5Y-wX-TNj">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="113.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sex - 01/09/17" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEo-mR-yqu">
+                                                    <rect key="frame" x="16" y="15" width="310" height="20"/>
+                                                    <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="15"/>
+                                                    <color key="textColor" red="0.92549019610000005" green="0.43921568630000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escapar de armadilha" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ec9-rC-DoO">
+                                                    <rect key="frame" x="16" y="51" width="310" height="37"/>
+                                                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="31"/>
+                                                    <color key="textColor" red="0.1450980392" green="0.1333333333" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Empate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUO-rh-Ofs">
+                                                    <rect key="frame" x="274" y="15" width="52" height="20"/>
+                                                    <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.93725490199999995" green="0.91764705879999997" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="xEo-mR-yqu" secondAttribute="trailing" constant="16" id="64e-Ha-cMW"/>
+                                                <constraint firstItem="Ec9-rC-DoO" firstAttribute="trailing" secondItem="xEo-mR-yqu" secondAttribute="trailing" id="CsS-ZW-X0f"/>
+                                                <constraint firstItem="xEo-mR-yqu" firstAttribute="leading" secondItem="w5Y-wX-TNj" secondAttribute="leading" constant="16" id="CzS-uv-OQq"/>
+                                                <constraint firstItem="Ec9-rC-DoO" firstAttribute="top" secondItem="xEo-mR-yqu" secondAttribute="bottom" constant="16" id="Xcl-xv-KyM"/>
+                                                <constraint firstItem="Ec9-rC-DoO" firstAttribute="leading" secondItem="xEo-mR-yqu" secondAttribute="leading" id="XyN-cr-VZM"/>
+                                                <constraint firstItem="XUO-rh-Ofs" firstAttribute="centerY" secondItem="xEo-mR-yqu" secondAttribute="centerY" id="duz-bH-xpW"/>
+                                                <constraint firstItem="XUO-rh-Ofs" firstAttribute="trailing" secondItem="xEo-mR-yqu" secondAttribute="trailing" id="qSi-bi-TLR"/>
+                                                <constraint firstItem="xEo-mR-yqu" firstAttribute="top" secondItem="w5Y-wX-TNj" secondAttribute="top" constant="15" id="vgR-eN-L1u"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.91764705879999997" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="114" id="acC-Ju-GqU">
+                                        <rect key="frame" x="0.0" y="456" width="375" height="114"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="acC-Ju-GqU" id="xRM-FZ-RTN">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="113.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seg - 08/06/17" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wy5-jA-n4g">
+                                                    <rect key="frame" x="16" y="15" width="310" height="20"/>
+                                                    <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="15"/>
+                                                    <color key="textColor" red="0.92549019610000005" green="0.43921568630000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fortaleça a equipe" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RkE-9p-X5K">
+                                                    <rect key="frame" x="16" y="51" width="310" height="37"/>
+                                                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="31"/>
+                                                    <color key="textColor" red="0.1450980392" green="0.1333333333" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vencedor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFh-LA-cF8">
+                                                    <rect key="frame" x="262" y="15" width="64" height="20"/>
+                                                    <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.93725490199999995" green="0.91764705879999997" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="RkE-9p-X5K" firstAttribute="top" secondItem="wy5-jA-n4g" secondAttribute="bottom" constant="16" id="1Dq-U6-s7M"/>
+                                                <constraint firstItem="BFh-LA-cF8" firstAttribute="centerY" secondItem="wy5-jA-n4g" secondAttribute="centerY" id="255-nW-85W"/>
+                                                <constraint firstItem="wy5-jA-n4g" firstAttribute="top" secondItem="xRM-FZ-RTN" secondAttribute="top" constant="15" id="5oF-jR-66k"/>
+                                                <constraint firstItem="RkE-9p-X5K" firstAttribute="trailing" secondItem="wy5-jA-n4g" secondAttribute="trailing" id="EXR-Kd-lC6"/>
+                                                <constraint firstItem="BFh-LA-cF8" firstAttribute="trailing" secondItem="wy5-jA-n4g" secondAttribute="trailing" id="Mep-7e-3nS"/>
+                                                <constraint firstAttribute="trailing" secondItem="wy5-jA-n4g" secondAttribute="trailing" constant="16" id="P2X-un-U7l"/>
+                                                <constraint firstItem="wy5-jA-n4g" firstAttribute="leading" secondItem="xRM-FZ-RTN" secondAttribute="leading" constant="16" id="ijZ-ss-C3w"/>
+                                                <constraint firstItem="RkE-9p-X5K" firstAttribute="leading" secondItem="wy5-jA-n4g" secondAttribute="leading" id="uLE-Bx-IJm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.91764705879999997" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="89I-ol-JiM" id="0He-Rd-sK1"/>
+                            <outlet property="delegate" destination="89I-ol-JiM" id="t3w-ms-Hul"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X2t-B9-CDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1008.8" y="380.5097451274363"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="kaiky" width="1000" height="1200"/>
+    </resources>
 </document>
