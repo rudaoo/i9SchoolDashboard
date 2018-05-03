@@ -10,6 +10,7 @@
 
 @interface SonDashboardViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *airplaneImage;
+@property (weak, nonatomic) IBOutlet UIButton *buttonChallenge;
 
 @end
 
@@ -39,6 +40,7 @@
     
     
     [self planeDepart];
+    [self fadeOutLabel];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,10 +51,35 @@
 -(void) onButtonPopViewController{
 }
 
+-(void) fadeInLabel {
+    
+    [UIView animateWithDuration:1.5 delay:0 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+        
+        [self.buttonChallenge setAlpha:1.0f];
+        [self.view layoutIfNeeded];
+        
+    } completion:^(BOOL finished) {
+        
+        [self fadeOutLabel];
+    }];
+}
+
+-(void) fadeOutLabel {
+    
+    [UIView animateWithDuration:1.5 delay:0 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+        
+        [self.buttonChallenge setAlpha:0.4f];
+       // [self.view layoutIfNeeded];
+        
+    } completion:^(BOOL finished) {
+        
+        [self fadeInLabel];
+    }];
+}
+
 -(void) planeDepart {
     
     CGPoint originalCenter = self.airplaneImage.center;
-    UIImageView *backupAirplane = self.airplaneImage;
     
     
     [UIView animateKeyframesWithDuration:1.5 delay:0 options:UIViewKeyframeAnimationOptionRepeat animations:^{
@@ -60,6 +87,7 @@
         [UIView addKeyframeWithRelativeStartTime:0 relativeDuration:0.25 animations:^{
             
             [self.airplaneImage setFrame:CGRectMake(self.airplaneImage.center.x + 80, self.airplaneImage.center.y - 50, self.airplaneImage.frame.size.width, self.airplaneImage.frame.size.height) ];
+            
         }];
         
         [UIView addKeyframeWithRelativeStartTime:0.1 relativeDuration:0.8 animations:^{
@@ -79,6 +107,8 @@
             self.airplaneImage.transform = CGAffineTransformMakeRotation(0);
             [self.airplaneImage setFrame:CGRectMake(0, originalCenter.y, self.airplaneImage.frame.size.width, self.airplaneImage.frame.size.height) ];
         }];
+        
+        
         
         [UIView addKeyframeWithRelativeStartTime:0.55 relativeDuration:0.45 animations:^{
             

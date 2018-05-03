@@ -127,6 +127,7 @@ Numero de chamada : 19 ID : #24233524</string>
                     </view>
                     <connections>
                         <outlet property="airplaneImage" destination="L2g-ba-G89" id="MA6-bc-04P"/>
+                        <outlet property="buttonChallenge" destination="bhP-Id-ZBg" id="G5a-G4-Vb9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nd2-gy-Ecv" userLabel="First Responder" sceneMemberID="firstResponder"/>
