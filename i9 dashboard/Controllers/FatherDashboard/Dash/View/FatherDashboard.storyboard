@@ -80,8 +80,8 @@
                                                     <constraint firstAttribute="width" constant="20" id="yJd-ph-3hE"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liderança" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Qe7-qS-uCB">
-                                                <rect key="frame" x="215.5" y="143" width="144" height="18.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resolução de problemas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Qe7-qS-uCB">
+                                                <rect key="frame" x="215.5" y="143" width="144" height="19"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="144" id="MXS-xf-nWM"/>
                                                 </constraints>
@@ -97,7 +97,7 @@
                                                     <constraint firstAttribute="height" constant="20" id="Rz4-9f-V45"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trabalho em Grupo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eMC-9c-Wt8">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comunicação interpessoal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eMC-9c-Wt8">
                                                 <rect key="frame" x="215.5" y="172.5" width="144" height="18.5"/>
                                                 <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="14"/>
                                                 <nil key="textColor"/>
@@ -111,7 +111,7 @@
                                                     <constraint firstAttribute="width" constant="20" id="itS-AQ-mef"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foco" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6rZ-rI-shf">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pensamento critico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6rZ-rI-shf">
                                                 <rect key="frame" x="215.5" y="202.5" width="144" height="18.5"/>
                                                 <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="14"/>
                                                 <nil key="textColor"/>
@@ -125,7 +125,7 @@
                                                     <constraint firstAttribute="width" constant="20" id="eab-Ap-J5T"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Raciocínio Lógico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tBc-RG-TN2">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capacidade Analitica" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tBc-RG-TN2">
                                                 <rect key="frame" x="215.5" y="232.5" width="144" height="18.5"/>
                                                 <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="14"/>
                                                 <nil key="textColor"/>
@@ -139,7 +139,7 @@
                                                     <constraint firstAttribute="width" constant="20" id="bfG-p4-8Oe"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inovação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NoL-ek-8Gv">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Criatividade / Inovação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NoL-ek-8Gv">
                                                 <rect key="frame" x="215.5" y="262.5" width="144" height="18.5"/>
                                                 <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="14"/>
                                                 <nil key="textColor"/>
