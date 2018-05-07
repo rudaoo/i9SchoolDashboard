@@ -80,12 +80,12 @@
                                                     <constraint firstAttribute="width" constant="20" id="yJd-ph-3hE"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resolução de problemas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Qe7-qS-uCB">
-                                                <rect key="frame" x="215.5" y="143" width="144" height="19"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resolução de Problemas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Qe7-qS-uCB">
+                                                <rect key="frame" x="215.5" y="144" width="144" height="17"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="144" id="MXS-xf-nWM"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -97,9 +97,9 @@
                                                     <constraint firstAttribute="height" constant="20" id="Rz4-9f-V45"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comunicação interpessoal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eMC-9c-Wt8">
-                                                <rect key="frame" x="215.5" y="172.5" width="144" height="18.5"/>
-                                                <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="14"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comunicação Interpessoal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eMC-9c-Wt8">
+                                                <rect key="frame" x="215.5" y="173.5" width="144" height="17"/>
+                                                <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -111,9 +111,9 @@
                                                     <constraint firstAttribute="width" constant="20" id="itS-AQ-mef"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pensamento critico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6rZ-rI-shf">
-                                                <rect key="frame" x="215.5" y="202.5" width="144" height="18.5"/>
-                                                <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="14"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pensamento Crítico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6rZ-rI-shf">
+                                                <rect key="frame" x="215.5" y="203.5" width="144" height="17"/>
+                                                <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -125,9 +125,9 @@
                                                     <constraint firstAttribute="width" constant="20" id="eab-Ap-J5T"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capacidade Analitica" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tBc-RG-TN2">
-                                                <rect key="frame" x="215.5" y="232.5" width="144" height="18.5"/>
-                                                <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="14"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capacidade Analítica" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tBc-RG-TN2">
+                                                <rect key="frame" x="215.5" y="233.5" width="144" height="17"/>
+                                                <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -140,8 +140,8 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Criatividade / Inovação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NoL-ek-8Gv">
-                                                <rect key="frame" x="215.5" y="262.5" width="144" height="18.5"/>
-                                                <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="14"/>
+                                                <rect key="frame" x="215.5" y="263.5" width="144" height="17"/>
+                                                <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -449,7 +449,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="113.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liderança - 100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXd-Lq-Cbn">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resolução de Problemas - 100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXd-Lq-Cbn">
                                                     <rect key="frame" x="16" y="15" width="309" height="20"/>
                                                     <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="15"/>
                                                     <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -457,7 +457,7 @@
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmh-Au-Tn8">
                                                     <rect key="frame" x="16" y="43" width="309" height="61"/>
-                                                    <string key="text">lorem ippsum bla ijadj iasjd asduaoiashd aisohd lorem ippsum bla ijadj iasjd asduaoiashd aisohd lorem ippsum bla ijadj iasjd asduaoiashd aisohd lorem ippsum bla ijadj iasjd asduaoiashd aisohd...</string>
+                                                    <string key="text">Forte senso para resolução de problemas, possuindo pronta disposição e maturidade para resolução dos mesmos, lidando muito bem com possíveis pressões durante a resolução, também...</string>
                                                     <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="13"/>
                                                     <color key="textColor" red="0.1450980392" green="0.1333333333" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -483,7 +483,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="113.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trabalho em Grupo - 50%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dob-bb-nMM">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comunicação Interpessoal - 100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dob-bb-nMM">
                                                     <rect key="frame" x="16" y="15" width="309" height="20"/>
                                                     <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -491,7 +491,7 @@
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29i-HH-ujX">
                                                     <rect key="frame" x="16" y="43" width="309" height="61"/>
-                                                    <string key="text">lorem ippsum bla ijadj iasjd asduaoiashd aisohd lorem ippsum bla ijadj iasjd asduaoiashd aisohd lorem ippsum bla ijadj iasjd asduaoiashd aisohd lorem ippsum bla ijadj iasjd asduaoiashd aisohd...</string>
+                                                    <string key="text">Como uma pessoa muito comunicativa, está e uma de suas maiores habilidades, pois está sempre entusiasmado para conversar com seus colegas, muitas vezes promovendo grandes debates…</string>
                                                     <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="13"/>
                                                     <color key="textColor" red="0.1450980392" green="0.1333333333" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -517,15 +517,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="113.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foco - 20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4g-WZ-CLM">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pensamento Crítico - 20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4g-WZ-CLM">
                                                     <rect key="frame" x="16" y="15" width="309" height="20"/>
                                                     <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="15"/>
                                                     <color key="textColor" red="1" green="0.50196078430000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUR-nT-m2q">
-                                                    <rect key="frame" x="16" y="43" width="309" height="61"/>
-                                                    <string key="text">lorem ippsum bla ijadj iasjd asduaoiashd aisohd lorem ippsum bla ijadj iasjd asduaoiashd aisohd lorem ippsum bla ijadj iasjd asduaoiashd aisohd lorem ippsum bla ijadj iasjd asduaoiashd aisohd...</string>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Encontra uma certa dificuldade para fazer o julgamento critico e definir os processos com base na formação de sua opinião." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUR-nT-m2q">
+                                                    <rect key="frame" x="16" y="43" width="309" height="45.5"/>
                                                     <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="13"/>
                                                     <color key="textColor" red="0.1450980392" green="0.1333333333" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -533,7 +532,6 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.93725490196078431" green="0.91764705882352937" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="eUR-nT-m2q" secondAttribute="bottom" constant="9.5" id="58z-Lf-c2z"/>
                                                 <constraint firstItem="H4g-WZ-CLM" firstAttribute="top" secondItem="RcU-cf-Uae" secondAttribute="top" constant="15" id="Ifx-1q-Pjb"/>
                                                 <constraint firstItem="eUR-nT-m2q" firstAttribute="leading" secondItem="H4g-WZ-CLM" secondAttribute="leading" id="Pve-t2-yQ3"/>
                                                 <constraint firstAttribute="trailing" secondItem="H4g-WZ-CLM" secondAttribute="trailing" constant="16" id="QLv-mC-aAo"/>
@@ -551,15 +549,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="113.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Raciocínio Lógico - 60%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HU5-e9-CVU">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capacidade Analítica - 60%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HU5-e9-CVU">
                                                     <rect key="frame" x="16" y="15" width="310" height="20"/>
                                                     <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QU6-fC-IzC">
-                                                    <rect key="frame" x="16" y="43" width="310" height="61"/>
-                                                    <string key="text">lorem ippsum bla ijadj iasjd asduaoiashd aisohd lorem ippsum bla ijadj iasjd asduaoiashd aisohd lorem ippsum bla ijadj iasjd asduaoiashd aisohd lorem ippsum bla ijadj iasjd asduaoiashd aisohd...</string>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Em um ambiente critico encontra dificuldade em gerar ideias disruptivas para possíveis soluções..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QU6-fC-IzC">
+                                                    <rect key="frame" x="16" y="43" width="310" height="30.5"/>
                                                     <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="13"/>
                                                     <color key="textColor" red="0.1450980392" green="0.1333333333" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -567,7 +564,6 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.93725490196078431" green="0.91764705882352937" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="QU6-fC-IzC" secondAttribute="bottom" constant="9.5" id="A26-HB-90F"/>
                                                 <constraint firstItem="QU6-fC-IzC" firstAttribute="trailing" secondItem="HU5-e9-CVU" secondAttribute="trailing" id="FuQ-tb-7s3"/>
                                                 <constraint firstItem="HU5-e9-CVU" firstAttribute="top" secondItem="J9B-xs-PT9" secondAttribute="top" constant="15" id="L6e-Uc-Ye9"/>
                                                 <constraint firstItem="HU5-e9-CVU" firstAttribute="leading" secondItem="J9B-xs-PT9" secondAttribute="leading" constant="16" id="Pyz-Dr-Plf"/>
@@ -585,15 +581,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="113.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inovação - 15%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VoR-7b-4E0">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Criatividade / Inovação - 15%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VoR-7b-4E0">
                                                     <rect key="frame" x="16" y="15" width="310" height="20"/>
                                                     <fontDescription key="fontDescription" name="ItauTextApp-Regular" family="Itau Text App" pointSize="15"/>
                                                     <color key="textColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noh-0d-i6M">
-                                                    <rect key="frame" x="16" y="43" width="310" height="61"/>
-                                                    <string key="text">lorem ippsum bla ijadj iasjd asduaoiashd aisohd lorem ippsum bla ijadj iasjd asduaoiashd aisohd lorem ippsum bla ijadj iasjd asduaoiashd aisohd lorem ippsum bla ijadj iasjd asduaoiashd aisohd...</string>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facilidade em ter uma visão sistêmica e encontrar os pontos críticos do desafio ..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noh-0d-i6M">
+                                                    <rect key="frame" x="16" y="43" width="310" height="30.5"/>
                                                     <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="13"/>
                                                     <color key="textColor" red="0.1450980392" green="0.1333333333" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -607,7 +602,6 @@
                                                 <constraint firstItem="VoR-7b-4E0" firstAttribute="top" secondItem="1ZZ-M9-INq" secondAttribute="top" constant="15" id="Kxj-Tk-wML"/>
                                                 <constraint firstAttribute="trailing" secondItem="VoR-7b-4E0" secondAttribute="trailing" constant="16" id="OnF-fJ-yyb"/>
                                                 <constraint firstItem="noh-0d-i6M" firstAttribute="leading" secondItem="VoR-7b-4E0" secondAttribute="leading" id="cjX-Zv-hNJ"/>
-                                                <constraint firstAttribute="bottom" secondItem="noh-0d-i6M" secondAttribute="bottom" constant="9.5" id="fth-6S-AF1"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.93725490196078431" green="0.91764705882352937" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>

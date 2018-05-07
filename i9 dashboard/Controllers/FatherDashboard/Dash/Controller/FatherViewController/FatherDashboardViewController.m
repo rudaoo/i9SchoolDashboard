@@ -69,7 +69,7 @@
 - (void)showItensOnScreenAnimation{
 
     [self.leadershipProgressBar animateWithduration:4 andColor:[UIColor redColor] andRadius:15 andPercentageValue:1];
-    [self.groupWorkProgressBar animateWithduration:4 andColor:[UIColor greenColor] andRadius:30 andPercentageValue:0.50];
+    [self.groupWorkProgressBar animateWithduration:4 andColor:[UIColor greenColor] andRadius:30 andPercentageValue:1];
     [self.focusProgressBar animateWithduration:4 andColor:[UIColor orangeColor] andRadius:45 andPercentageValue:0.60];
     [self.logicSkillProgressBar animateWithduration:4 andColor:[UIColor blueColor] andRadius:60 andPercentageValue:0.85];
     [self.inovationSkillProgressBar animateWithduration:4 andColor:[UIColor magentaColor] andRadius:75 andPercentageValue:0.60];
