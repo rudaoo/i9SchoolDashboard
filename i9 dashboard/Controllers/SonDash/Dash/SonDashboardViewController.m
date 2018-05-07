@@ -40,7 +40,6 @@
     
     
     [self planeDepart];
-    [self fadeOutLabel];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,32 +48,6 @@
 }
 
 -(void) onButtonPopViewController{
-}
-
--(void) fadeInLabel {
-    
-    [UIView animateWithDuration:1.5 delay:0 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
-        
-        [self.buttonChallenge setAlpha:1.0f];
-        [self.view layoutIfNeeded];
-        
-    } completion:^(BOOL finished) {
-        
-        [self fadeOutLabel];
-    }];
-}
-
--(void) fadeOutLabel {
-    
-    [UIView animateWithDuration:1.5 delay:0 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
-        
-        [self.buttonChallenge setAlpha:0.4f];
-       // [self.view layoutIfNeeded];
-        
-    } completion:^(BOOL finished) {
-        
-        [self fadeInLabel];
-    }];
 }
 
 -(void) planeDepart {
