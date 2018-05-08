@@ -269,7 +269,7 @@ Numero de chamada : 19 ID : #24233524</string>
                                         <rect key="frame" x="0.0" y="342" width="375" height="114"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8O9-lD-6AH" id="w5Y-wX-TNj">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="113.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="113.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sex - 01/09/17" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEo-mR-yqu">
@@ -309,7 +309,7 @@ Numero de chamada : 19 ID : #24233524</string>
                                         <rect key="frame" x="0.0" y="456" width="375" height="114"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="acC-Ju-GqU" id="xRM-FZ-RTN">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="113.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="113.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seg - 08/06/17" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wy5-jA-n4g">

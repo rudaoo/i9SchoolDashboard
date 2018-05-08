@@ -44,17 +44,17 @@
 
 - (void)showItensOnScreenAnimation{
     
-    [self.leadershipProgressBar makeLineLayer:CGPointMake(58, 340) toPointB:CGPointMake(55, 200) andDuration:2 andColor:[UIColor orangeColor] andPercentageValue:0.9];
+    [self.leadershipProgressBar makeLineLayer:CGPointMake(45, 340) toPointB:CGPointMake(45, 200) andDuration:2 andColor:[UIColor orangeColor] andPercentageValue:0.9];
     
-   [self.secondGraphic makeLineLayer:CGPointMake(110, 340) toPointB:CGPointMake(110, 200) andDuration:2 andColor:[UIColor redColor] andPercentageValue:1.5];
+   [self.secondGraphic makeLineLayer:CGPointMake(100, 340) toPointB:CGPointMake(100, 200) andDuration:2 andColor:[UIColor redColor] andPercentageValue:1.5];
     
-   [self.thirdGraphic makeLineLayer:CGPointMake(160, 340) toPointB:CGPointMake(160, 200) andDuration:2 andColor:[UIColor greenColor] andPercentageValue:1.3];
+   [self.thirdGraphic makeLineLayer:CGPointMake(155, 340) toPointB:CGPointMake(155, 200) andDuration:2 andColor:[UIColor greenColor] andPercentageValue:1];
 
-   [self.fourthGraphic makeLineLayer:CGPointMake(212, 340) toPointB:CGPointMake(212, 200) andDuration:2 andColor:[UIColor grayColor] andPercentageValue:0.7];
+   [self.fourthGraphic makeLineLayer:CGPointMake(207, 340) toPointB:CGPointMake(207, 200) andDuration:2 andColor:[UIColor grayColor] andPercentageValue:0.7];
     
-   [self.fourthGraphic makeLineLayer:CGPointMake(262, 340) toPointB:CGPointMake(262, 200) andDuration:2 andColor:[UIColor blueColor] andPercentageValue:1.2];
+   [self.fourthGraphic makeLineLayer:CGPointMake(273, 340) toPointB:CGPointMake(273, 200) andDuration:2 andColor:[UIColor blueColor] andPercentageValue:1.2];
 
-   [self.sixthGraphic makeLineLayer:CGPointMake(313, 340) toPointB:CGPointMake(313, 200) andDuration:2 andColor:[UIColor blackColor] andPercentageValue:1];
+   [self.sixthGraphic makeLineLayer:CGPointMake(333, 340) toPointB:CGPointMake(333, 200) andDuration:2 andColor:[UIColor blackColor] andPercentageValue:1.5];
 }
 -(void) onButtonPopViewController{
 }
